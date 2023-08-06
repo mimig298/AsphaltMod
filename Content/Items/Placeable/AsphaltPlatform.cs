@@ -6,11 +6,6 @@ namespace AsphaltMod.Content.Items.Placeable
 {
     public class AsphaltPlatform : ModItem
     {
-        public override void SetStaticDefaults()
-        {
-            Tooltip.SetDefault("To make arenas better.");
-        }
-
         public override void SetDefaults()
         {
             Item.width = 24;

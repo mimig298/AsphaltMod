@@ -6,7 +6,6 @@ namespace AsphaltMod.Content.Items.Weapons.Ammo
 {
     public class AsphaltBullet : ModItem
     {
-
         public override void SetDefaults()
         {
             Item.damage = 10; // The damage for projectiles isn't actually 12, it actually is the damage combined with the projectile and the item together.

@@ -7,13 +7,7 @@ namespace AsphaltMod.Content.Items.Equippable
     [AutoloadEquip(EquipType.Shoes)]
     internal class AsphaltBoots : ModItem
     {
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Asphalt Boots");
-            Tooltip.SetDefault("The wearer can run extremely fast");
-        }
-
-        public override void SetDefaults()
+    public override void SetDefaults()
         {
             Item.width = 34;
             Item.height = 28;

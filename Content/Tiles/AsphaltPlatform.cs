@@ -33,7 +33,6 @@ namespace AsphaltMod.Content.Tiles
 
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsDoor);
             DustType = DustID.Asphalt;
-            ItemDrop = ModContent.ItemType<Items.Placeable.AsphaltPlatform>();
             TileID.Sets.DisableSmartCursor[Type] = true;
             AdjTiles = new int[] { TileID.Platforms };
             AddMapEntry(new Color(53, 53, 47));
