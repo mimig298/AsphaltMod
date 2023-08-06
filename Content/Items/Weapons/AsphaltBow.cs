@@ -7,11 +7,6 @@ namespace AsphaltMod.Content.Items.Weapons
 {
     internal class AsphaltBow : ModItem
     {
-        public override void SetStaticDefaults()
-        {
-            
-        }
-
         public override void SetDefaults() 
         {
             Item.DefaultToBow(8, 12, true);
