@@ -5,7 +5,12 @@ namespace AsphaltMod.Content.Buffs
 {
     public class AsphaltSpeed : ModBuff
     {
-        public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
+        public override void SetStaticDefaults()
+        {
+            DisplayName.SetDefault("Asphalt Speed Boost");
+        }
+
+        public override void ModifyBuffTip(ref string tip, ref int rare)
         {
             tip = "Asphalt movement enabled";
         }

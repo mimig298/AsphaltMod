@@ -9,6 +9,9 @@ namespace AsphaltMod.Content.Items.Consumable
     {
         public override void SetStaticDefaults()
         {
+            DisplayName.SetDefault("Asphalt Potion");
+            Tooltip.SetDefault("Massively increased movement speed\r\n'Are you sure you should be drinking this?'");
+
             ItemID.Sets.DrinkParticleColors[Type] = new Color[3]
             {
                 new Color(32, 33, 34),

@@ -7,6 +7,12 @@ namespace AsphaltMod.Content.Items.Equippable
     [AutoloadEquip(EquipType.HandsOn)]
     public class AsphaltClaws : ModItem
     {
+        public override void SetStaticDefaults()
+        {
+            DisplayName.SetDefault("Asphalt Glove");
+            Tooltip.SetDefault("Increases melee knockback\r\n12% increased melee damage\r\nDoubled melee speed\r\nEnables auto swing for melee weapons\r\nIncreases the size of melee weapons");
+        }
+
         public override void SetDefaults()
         {
             Item.width = 22;
