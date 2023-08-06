@@ -6,12 +6,6 @@ namespace AsphaltMod.Content.Items.Weapons
 {
 	public class AsphaltSword : ModItem
 	{
-		public override void SetStaticDefaults()
-		{
-			// DisplayName.SetDefault("AsphaltSword"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("To kill stuff faster.");
-		}
-
 		public override void SetDefaults()
 		{
 			Item.damage = 50;

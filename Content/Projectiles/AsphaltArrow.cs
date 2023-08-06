@@ -6,11 +6,6 @@ namespace AsphaltMod.Content.Projectiles
 {
     public class AsphaltArrow : ModProjectile
     {
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Asphalt Arrow");
-        }
-
         public override void SetDefaults()
         {
             Projectile.arrow = true;
