@@ -5,8 +5,13 @@ using Terraria.ModLoader;
 namespace AsphaltMod.Content.Items.Weapons
 {
 	public class AsphaltSword : ModItem
-	{
-		public override void SetDefaults()
+    {
+        public override void SetStaticDefaults()
+        {
+            Item.ResearchUnlockCount = 1;
+        }
+
+        public override void SetDefaults()
 		{
 			Item.damage = 50;
 			Item.DamageType = DamageClass.Melee;

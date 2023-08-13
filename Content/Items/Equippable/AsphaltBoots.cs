@@ -7,6 +7,11 @@ namespace AsphaltMod.Content.Items.Equippable
     [AutoloadEquip(EquipType.Shoes)]
     internal class AsphaltBoots : ModItem
     {
+        public override void SetStaticDefaults()
+        {
+            Item.ResearchUnlockCount = 1;
+        }
+
         public override void SetDefaults()
         {
             Item.width = 34;

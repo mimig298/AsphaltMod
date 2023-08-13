@@ -14,7 +14,6 @@ namespace AsphaltMod.Content.Projectiles
             Projectile.aiStyle = ProjAIStyleID.Arrow; // or 1
             Projectile.friendly = true;
             Projectile.noDropItem = true;
-            Projectile.maxPenetrate = 2;
             Projectile.penetrate = 2;
             Projectile.DamageType = DamageClass.Ranged;
             AIType = ProjectileID.WoodenArrowFriendly;

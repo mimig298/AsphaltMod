@@ -1,4 +1,3 @@
-
 Mods: {
 	AsphaltMod: {
 		Buffs: {
@@ -11,11 +10,7 @@ Mods: {
 		Items: {
 			AsphaltPotion: {
 				DisplayName: Asphalt Potion
-				Tooltip:
-					"""
-					Massively increased movement speed
-					'Are you sure you should be drinking this?'
-					"""
+				Tooltip: Massively increased movement speed\r\n'Are you sure you should be drinking this?'
 			}
 
 			AsphaltBoots: {
@@ -25,14 +20,7 @@ Mods: {
 
 			AsphaltClaws: {
 				DisplayName: Asphalt Glove
-				Tooltip:
-					'''
-					Increases melee knockback
-					12% increased melee damage
-					Doubled melee speed
-					Enables auto swing for melee weapons
-					Increases the size of melee weapons
-					'''
+				Tooltip: Increases melee knockback\r\n12% increased melee damage\r\nDoubled melee speed\r\nEnables auto swing for melee weapons\r\nIncreases the size of melee weapons
 			}
 
 			AsphaltPlatform: {
@@ -40,11 +28,30 @@ Mods: {
 				Tooltip: To make arenas better.
 			}
 
-			AsphaltPickaxe.DisplayName: Asphalt Pickaxe
-			AsphaltArrow.DisplayName: Asphalt Arrow
-			AsphaltBullet.DisplayName: Asphalt Bullet
-			AsphaltBow.DisplayName: Asphalt Bow
-			AsphaltGun.DisplayName: Asphalt Gun
+			AsphaltPickaxe: {
+				DisplayName: Asphalt Pickaxe
+				Tooltip: ""
+			}
+
+			AsphaltArrow: {
+				DisplayName: Asphalt Arrow
+				Tooltip: ""
+			}
+
+			AsphaltBullet: {
+				DisplayName: Asphalt Bullet
+				Tooltip: ""
+			}
+
+			AsphaltBow: {
+				DisplayName: Asphalt Bow
+				Tooltip: ""
+			}
+
+			AsphaltGun: {
+				DisplayName: Asphalt Gun
+				Tooltip: ""
+			}
 
 			AsphaltSword: {
 				DisplayName: Asphalt Sword
@@ -52,6 +59,9 @@ Mods: {
 			}
 		}
 
-		Projectiles.AsphaltArrow.DisplayName: Asphalt Arrow
+		Projectiles: {
+			AsphaltArrow.DisplayName: Asphalt Arrow
+			AsphaltBullet.DisplayName: Asphalt Bullet
+		}
 	}
 }

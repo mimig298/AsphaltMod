@@ -2,10 +2,15 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace AsphaltMod.Content.Items.Weapons.Ammo
+namespace AsphaltMod.Content.Items.Ammo
 {
     internal class AsphaltArrow : ModItem
     {
+        public override void SetStaticDefaults()
+        {
+            Item.ResearchUnlockCount = 99;
+        }
+
         public override void SetDefaults() 
         {
             Item.damage = 12;

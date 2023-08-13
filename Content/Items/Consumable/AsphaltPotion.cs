@@ -9,6 +9,8 @@ namespace AsphaltMod.Content.Items.Consumable
     {
         public override void SetStaticDefaults()
         {
+            Item.ResearchUnlockCount = 20;
+
             ItemID.Sets.DrinkParticleColors[Type] = new Color[3]
             {
                 new Color(32, 33, 34),
@@ -26,7 +28,7 @@ namespace AsphaltMod.Content.Items.Consumable
             Item.useTime = 5;
             Item.useTurn = true;
             Item.UseSound = SoundID.Item3;
-            Item.maxStack = 30;
+            Item.maxStack = 9999;
             Item.consumable = true;
             Item.rare = ItemRarityID.Pink;
             Item.value = Item.sellPrice(silver: 1, copper: 50);

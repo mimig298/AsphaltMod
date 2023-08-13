@@ -6,11 +6,16 @@ namespace AsphaltMod.Content.Items.Placeable
 {
     public class AsphaltPlatform : ModItem
     {
+        public override void SetStaticDefaults()
+        {
+            Item.ResearchUnlockCount = 99;
+        }
+
         public override void SetDefaults()
         {
             Item.width = 24;
             Item.height = 14;
-            Item.maxStack = 999;
+            Item.maxStack = 9999;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.useAnimation = 15;
             Item.useTime = 10;

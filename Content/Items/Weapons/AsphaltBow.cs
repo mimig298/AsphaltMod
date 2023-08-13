@@ -1,12 +1,16 @@
-﻿using Microsoft.Xna.Framework;
-using Terraria;
+﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace AsphaltMod.Content.Items.Weapons
 {
-    internal class AsphaltBow : ModItem
+    public class AsphaltBow : ModItem
     {
+        public override void SetStaticDefaults()
+        {
+            Item.ResearchUnlockCount = 1;
+        }
+
         public override void SetDefaults() 
         {
             Item.DefaultToBow(8, 12, true);

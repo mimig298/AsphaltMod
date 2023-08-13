@@ -5,11 +5,6 @@ namespace AsphaltMod.Content.Buffs
 {
     public class AsphaltSpeed : ModBuff
     {
-        public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
-        {
-            tip = "Asphalt movement enabled";
-        }
-
         public override void Update(Player player, ref int buffIndex)
         {
             player.GetModPlayer<BuffCounterAsphaltSpeed>().AsphaltSpeedRegen = true;
@@ -31,7 +26,7 @@ namespace AsphaltMod.Content.Buffs
         {
             if (AsphaltSpeedRegen)
             {
-                Player.lifeRegen -= 5;
+                Player.lifeRegen -= 7;
             }
         }
     }
