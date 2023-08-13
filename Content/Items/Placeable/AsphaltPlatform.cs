@@ -8,7 +8,7 @@ namespace AsphaltMod.Content.Items.Placeable
     {
         public override void SetStaticDefaults()
         {
-            Item.ResearchUnlockCount = 99;
+            Item.ResearchUnlockCount = 100;
         }
 
         public override void SetDefaults()

@@ -50,12 +50,17 @@ Mods: {
 
 			AsphaltGun: {
 				DisplayName: Asphalt Gun
-				Tooltip: ""
+				Tooltip: To shoot stuff faster.
 			}
 
 			AsphaltSword: {
 				DisplayName: Asphalt Sword
 				Tooltip: To kill stuff faster.
+			}
+
+			AsphaltBricks: {
+				DisplayName: Asphalt Bricks
+				Tooltip: ""
 			}
 		}
 
