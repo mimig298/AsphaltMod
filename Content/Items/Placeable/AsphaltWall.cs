@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace AsphaltMod.Content.Items.Placeable
 {
-    public class AsphaltBrickWall : ModItem
+    public class AsphaltWall : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -13,18 +13,18 @@ namespace AsphaltMod.Content.Items.Placeable
 
         public override void SetDefaults()
         {
-            Item.DefaultToPlaceableWall(ModContent.WallType<Walls.AsphaltBrickWall>());
+            Item.DefaultToPlaceableWall(ModContent.WallType<Walls.AsphaltWall>());
         }
 
         public override void AddRecipes()
         {
             CreateRecipe(4)
-                .AddIngredient<AsphaltBrick>()
+                .AddIngredient(ItemID.AsphaltBlock)
                 .AddTile(TileID.WorkBenches)
                 .Register();
 
-            Recipe undoWall = Recipe.Create(ModContent.ItemType<AsphaltBrick>());
-            undoWall.AddIngredient<AsphaltBrickWall>(4);
+            Recipe undoWall = Recipe.Create(ItemID.AsphaltBlock);
+            undoWall.AddIngredient<AsphaltWall>(4);
             undoWall.AddTile(TileID.WorkBenches);
             undoWall.Register();
         }

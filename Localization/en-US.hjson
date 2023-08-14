@@ -58,13 +58,18 @@ Mods: {
 				Tooltip: To kill stuff faster.
 			}
 
-			AsphaltBricks: {
-				DisplayName: Asphalt Bricks
+			AsphaltBrickWall: {
+				DisplayName: Asphalt Brick Wall
 				Tooltip: ""
 			}
 
-			AsphaltBrickWall: {
-				DisplayName: Asphalt Brick Wall
+			AsphaltBrick: {
+				DisplayName: Asphalt Brick
+				Tooltip: ""
+			}
+
+			AsphaltWall: {
+				DisplayName: Asphalt Wall
 				Tooltip: ""
 			}
 		}

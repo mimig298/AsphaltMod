@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace AsphaltMod.Content.Items.Placeable
 {
-    public class AsphaltBricks : ModItem
+    public class AsphaltBrick : ModItem
     {
         public override void SetStaticDefaults()
         {
