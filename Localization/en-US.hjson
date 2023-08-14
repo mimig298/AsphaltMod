@@ -10,7 +10,11 @@ Mods: {
 		Items: {
 			AsphaltPotion: {
 				DisplayName: Asphalt Potion
-				Tooltip: Massively increased movement speed\r\n'Are you sure you should be drinking this?'
+				Tooltip: 
+					'''
+					Massively increased movement speed
+					'Are you sure you should be drinking this?'
+					'''
 			}
 
 			AsphaltBoots: {
@@ -20,7 +24,14 @@ Mods: {
 
 			AsphaltClaws: {
 				DisplayName: Asphalt Glove
-				Tooltip: Increases melee knockback\r\n12% increased melee damage\r\nDoubled melee speed\r\nEnables auto swing for melee weapons\r\nIncreases the size of melee weapons
+				Tooltip: 
+					'''
+					Increases melee knockback
+					12% increased melee damage
+					Doubled melee speed
+					Enables auto swing for melee weapons
+					Increases the size of melee weapons
+					'''
 			}
 
 			AsphaltPlatform: {
@@ -70,6 +81,11 @@ Mods: {
 
 			AsphaltWall: {
 				DisplayName: Asphalt Wall
+				Tooltip: ""
+			}
+
+			AsphaltTable: {
+				DisplayName: Asphalt Table
 				Tooltip: ""
 			}
 		}
