@@ -30,7 +30,7 @@ Mods: {
 
 			AsphaltPickaxe: {
 				DisplayName: Asphalt Pickaxe
-				Tooltip: ""
+				Tooltip: To mine stuff faster.
 			}
 
 			AsphaltArrow: {
@@ -60,6 +60,11 @@ Mods: {
 
 			AsphaltBricks: {
 				DisplayName: Asphalt Bricks
+				Tooltip: ""
+			}
+
+			AsphaltBrickWall: {
+				DisplayName: Asphalt Brick Wall
 				Tooltip: ""
 			}
 		}
