@@ -93,6 +93,11 @@ Mods: {
 				DisplayName: Asphalt Chair
 				Tooltip: ""
 			}
+
+			AsphaltWorkbench: {
+				DisplayName: Asphalt Work Bench
+				Tooltip: ""
+			}
 		}
 
 		Projectiles: {
