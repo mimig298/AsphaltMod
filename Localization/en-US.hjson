@@ -98,6 +98,11 @@ Mods: {
 				DisplayName: Asphalt Work Bench
 				Tooltip: ""
 			}
+
+			AsphaltDoor: {
+				DisplayName: Asphalt Door
+				Tooltip: ""
+			}
 		}
 
 		Projectiles: {
