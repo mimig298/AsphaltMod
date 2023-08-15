@@ -10,7 +10,7 @@ Mods: {
 		Items: {
 			AsphaltPotion: {
 				DisplayName: Asphalt Potion
-				Tooltip: 
+				Tooltip:
 					'''
 					Massively increased movement speed
 					'Are you sure you should be drinking this?'
@@ -24,7 +24,7 @@ Mods: {
 
 			AsphaltClaws: {
 				DisplayName: Asphalt Glove
-				Tooltip: 
+				Tooltip:
 					'''
 					Increases melee knockback
 					12% increased melee damage
@@ -86,6 +86,11 @@ Mods: {
 
 			AsphaltTable: {
 				DisplayName: Asphalt Table
+				Tooltip: ""
+			}
+
+			AsphaltChair: {
+				DisplayName: Asphalt Chair
 				Tooltip: ""
 			}
 		}

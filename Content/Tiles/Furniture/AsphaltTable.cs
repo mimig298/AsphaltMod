@@ -28,7 +28,7 @@ namespace AsphaltMod.Content.Tiles.Furniture
             TileObjectData.addTile(Type);
 
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
-            AddMapEntry(new Color(20, 20, 20), Language.GetText("MapObject.Table"));
+            AddMapEntry(new Color(53, 53, 47), Language.GetText("MapObject.Table"));
         }
 
         public override void NumDust(int i, int j, bool fail, ref int num)
