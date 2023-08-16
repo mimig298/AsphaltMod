@@ -103,6 +103,8 @@ Mods: {
 				DisplayName: Asphalt Door
 				Tooltip: ""
 			}
+
+			AsphaltLamp.DisplayName: Asphalt Lamp
 		}
 
 		Projectiles: {
