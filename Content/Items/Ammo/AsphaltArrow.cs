@@ -21,7 +21,7 @@ namespace AsphaltMod.Content.Items.Ammo
             Item.consumable = true;
             Item.knockBack = 1.2f;
             Item.value = 12;
-            Item.rare = ItemRarityID.Pink;
+            Item.rare = ItemRarityID.LightRed;
             Item.shoot = ModContent.ProjectileType<Projectiles.AsphaltArrow>();
             Item.shootSpeed = 5;
             Item.ammo = AmmoID.Arrow;

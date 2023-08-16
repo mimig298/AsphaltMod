@@ -21,7 +21,7 @@ namespace AsphaltMod.Content.Items.Weapons
             Item.height = 20; // Hitbox height of the item.
             Item.scale = 1;
             Item.value = 14200;
-            Item.rare = ItemRarityID.Pink; // The color that the item's name will be in-game.
+            Item.rare = ItemRarityID.LightRed; // The color that the item's name will be in-game.
 
             // Use Properties
             Item.useTime = 5; // The item's use time in ticks (60 ticks == 1 second.)

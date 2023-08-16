@@ -18,7 +18,7 @@ namespace AsphaltMod.Content.Items.Weapons
             Item.width = 18;
             Item.height = 36;
             Item.value = 13700;
-            Item.rare = ItemRarityID.Pink;
+            Item.rare = ItemRarityID.LightRed;
 
             Item.UseSound = SoundID.Item5;
 

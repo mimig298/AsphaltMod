@@ -22,7 +22,7 @@ namespace AsphaltMod.Content.Items.Weapons
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 3;
 			Item.value = 14000;
-			Item.rare = ItemRarityID.Pink;
+			Item.rare = ItemRarityID.LightRed;
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;
 		}

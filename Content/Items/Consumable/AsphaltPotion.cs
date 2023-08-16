@@ -30,7 +30,7 @@ namespace AsphaltMod.Content.Items.Consumable
             Item.UseSound = SoundID.Item3;
             Item.maxStack = 9999;
             Item.consumable = true;
-            Item.rare = ItemRarityID.Pink;
+            Item.rare = ItemRarityID.LightRed;
             Item.value = Item.sellPrice(silver: 1, copper: 50);
             Item.buffType = ModContent.BuffType<Buffs.AsphaltSpeed>();
             Item.buffTime = 18000;

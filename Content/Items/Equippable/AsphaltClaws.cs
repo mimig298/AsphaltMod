@@ -17,7 +17,7 @@ namespace AsphaltMod.Content.Items.Equippable
             Item.width = 22;
             Item.height = 30;
             Item.accessory = true; // Makes this item an accessory.
-            Item.rare = ItemRarityID.Pink;
+            Item.rare = ItemRarityID.LightRed;
             Item.value = 20000;
         }
 

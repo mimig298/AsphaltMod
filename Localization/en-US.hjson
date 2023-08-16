@@ -105,6 +105,16 @@ Mods: {
 			}
 
 			AsphaltLamp.DisplayName: Asphalt Lamp
+
+			AsphaltAxe: {
+				DisplayName: Asphalt Axe
+				Tooltip: To cut stuff faster.
+			}
+
+			AsphaltHammer: {
+				DisplayName: Asphalt Hammer
+				Tooltip: To smash stuff faster.
+			}
 		}
 
 		Projectiles: {

@@ -17,7 +17,7 @@ namespace AsphaltMod.Content.Items.Equippable
             Item.width = 34;
             Item.height = 28;
             Item.accessory = true;
-            Item.rare = ItemRarityID.Pink;
+            Item.rare = ItemRarityID.LightRed;
             Item.value = Item.sellPrice(gold: 1, silver: 70);
         }
 
