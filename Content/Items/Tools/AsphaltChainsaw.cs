@@ -4,23 +4,33 @@ using Terraria.ModLoader;
 
 namespace AsphaltMod.Content.Items.Tools
 {
-    public class AsphaltAxe : ModItem
+    public class AsphaltChainsaw : ModItem
     {
+        public override void SetStaticDefaults()
+        {
+            ItemID.Sets.IsChainsaw[Type] = true;
+        }
+
         public override void SetDefaults()
         {
-            Item.damage = 25;
+            Item.damage = 30;
             Item.DamageType = DamageClass.Melee;
-            Item.width = 40;
-            Item.height = 32;
-            Item.useTime = 5;
+            Item.width = 56;
+            Item.height = 14;
+            Item.useTime = 3;
             Item.useAnimation = 5;
-            Item.useStyle = ItemUseStyleID.Swing;
-            Item.knockBack = 1.5f;
-            Item.value = Item.sellPrice(gold: 2, silver: 75);
+            Item.useStyle = ItemUseStyleID.Shoot;
+            Item.knockBack = 0.1f;
+            Item.value = Item.sellPrice(gold: 2, silver: 7);
             Item.rare = ItemRarityID.LightRed;
-            Item.UseSound = SoundID.Item1;
-            Item.autoReuse = true;
+            Item.UseSound = SoundID.Item23;
+            Item.shoot = ModContent.ProjectileType<Projectiles.AsphaltChainsaw>();
+            Item.shootSpeed = 40f;
+            Item.noMelee = true;
+            Item.noUseGraphic = true;
+            Item.channel = true;
 
+            Item.tileBoost = -2;
             Item.axe = 20;
         }
 

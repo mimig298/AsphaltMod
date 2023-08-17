@@ -115,11 +115,23 @@ Mods: {
 				DisplayName: Asphalt Hammer
 				Tooltip: To smash stuff faster.
 			}
+
+			AsphaltDrill: {
+				DisplayName: Asphalt Drill
+				Tooltip: To ...drill... ...dig... whatever, you do it fast.
+			}
+
+			AsphaltChainsaw: {
+				DisplayName: Asphalt Chainsaw
+				Tooltip: To ...cut... chainsaw...? Forget it.
+			}
 		}
 
 		Projectiles: {
 			AsphaltArrow.DisplayName: Asphalt Arrow
 			AsphaltBullet.DisplayName: Asphalt Bullet
+			AsphaltDrill.DisplayName: Asphalt Drill
+			AsphaltChainsaw.DisplayName: Asphalt Chainsaw
 		}
 	}
 }
