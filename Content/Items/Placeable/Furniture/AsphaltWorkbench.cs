@@ -17,6 +17,7 @@ namespace AsphaltMod.Content.Items.Placeable.Furniture
         {
             CreateRecipe()
                 .AddIngredient(ItemID.AsphaltBlock, 10)
+                .AddTile(ModContent.TileType<Tiles.AsphaltMachine>())
                 .Register();
         }
     }

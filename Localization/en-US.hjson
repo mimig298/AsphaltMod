@@ -125,6 +125,15 @@ Mods: {
 				DisplayName: Asphalt Chainsaw
 				Tooltip: To ...cut... chainsaw...? Forget it.
 			}
+
+			AsphaltMachine: {
+				DisplayName: Asphalt Machine
+				Tooltip:
+					'''
+					Used for asphalt recipes
+					'Getting more asphalt in your asphalt every day.'
+					'''
+			}
 		}
 
 		Projectiles: {
@@ -133,5 +142,7 @@ Mods: {
 			AsphaltDrill.DisplayName: Asphalt Drill
 			AsphaltChainsaw.DisplayName: Asphalt Chainsaw
 		}
+
+		Tiles.AsphaltMachine.MapEntry: Asphalt Machine
 	}
 }

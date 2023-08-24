@@ -23,7 +23,7 @@ namespace AsphaltMod.Content.Items.Placeable.Furniture
         {
             CreateRecipe()
                 .AddIngredient(ItemID.AsphaltBlock, 8)
-                .AddTile(TileID.WorkBenches)
+                .AddTile(ModContent.TileType<Tiles.AsphaltMachine>())
                 .Register();
         }
     }
