@@ -1,11 +1,14 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace AsphaltMod.Content.Items.Placeable.Furniture
 {
     public class AsphaltChair : ModItem
     {
+        public override LocalizedText Tooltip => LocalizedText.Empty;
+
         public override void SetStaticDefaults()
         {
             Item.ResearchUnlockCount = 3;

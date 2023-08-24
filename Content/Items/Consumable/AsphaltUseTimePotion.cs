@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace AsphaltMod.Content.Items.Consumable
 {
-    public class AsphaltPotion : ModItem
+    public class AsphaltUseTimePotion : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -21,7 +21,7 @@ namespace AsphaltMod.Content.Items.Consumable
 
         public override void SetDefaults()
         {
-            Item.width = 12;
+            Item.width = 10;
             Item.height = 30;
             Item.useStyle = ItemUseStyleID.DrinkLiquid;
             Item.useAnimation = 5;
@@ -32,17 +32,17 @@ namespace AsphaltMod.Content.Items.Consumable
             Item.consumable = true;
             Item.rare = ItemRarityID.LightRed;
             Item.value = Item.sellPrice(silver: 1, copper: 50);
-            Item.buffType = ModContent.BuffType<Buffs.AsphaltSpeed>();
+            Item.buffType = ModContent.BuffType<Buffs.AsphaltUseTime>();
             Item.buffTime = 18000;
         }
 
         public override void AddRecipes()
         {
             CreateRecipe()
-                .AddIngredient(ItemID.SwiftnessPotion)
+                .AddIngredient(ItemID.BottledWater)
                 .AddIngredient(ItemID.AsphaltBlock)
-                .AddIngredient(ItemID.Blinkroot)
-                .AddIngredient(ItemID.Daybloom)
+                .AddIngredient(ItemID.Waterleaf)
+                .AddIngredient(ItemID.Fireblossom)
                 .AddTile(TileID.Bottles)
                 .Register();
         }

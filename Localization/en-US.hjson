@@ -5,11 +5,16 @@ Mods: {
 				DisplayName: Asphalt Speed Boost
 				Description: Asphalt movement enabled
 			}
+
+			AsphaltUseTime: {
+				DisplayName: Asphalt Use Time
+				Description: 70% faster weapon use time
+			}
 		}
 
 		Items: {
 			AsphaltPotion: {
-				DisplayName: Asphalt Potion
+				DisplayName: Asphalt Swiftness Potion
 				Tooltip:
 					'''
 					Massively increased movement speed
@@ -69,41 +74,13 @@ Mods: {
 				Tooltip: To kill stuff faster.
 			}
 
-			AsphaltBrickWall: {
-				DisplayName: Asphalt Brick Wall
-				Tooltip: ""
-			}
-
-			AsphaltBrick: {
-				DisplayName: Asphalt Brick
-				Tooltip: ""
-			}
-
-			AsphaltWall: {
-				DisplayName: Asphalt Wall
-				Tooltip: ""
-			}
-
-			AsphaltTable: {
-				DisplayName: Asphalt Table
-				Tooltip: ""
-			}
-
-			AsphaltChair: {
-				DisplayName: Asphalt Chair
-				Tooltip: ""
-			}
-
-			AsphaltWorkbench: {
-				DisplayName: Asphalt Work Bench
-				Tooltip: ""
-			}
-
-			AsphaltDoor: {
-				DisplayName: Asphalt Door
-				Tooltip: ""
-			}
-
+			AsphaltBrickWall.DisplayName: Asphalt Brick Wall
+			AsphaltBrick.DisplayName: Asphalt Brick
+			AsphaltWall.DisplayName: Asphalt Wall
+			AsphaltTable.DisplayName: Asphalt Table
+			AsphaltChair.DisplayName: Asphalt Chair
+			AsphaltWorkbench.DisplayName: Asphalt Work Bench
+			AsphaltDoor.DisplayName: Asphalt Door
 			AsphaltLamp.DisplayName: Asphalt Lamp
 
 			AsphaltAxe: {
@@ -132,6 +109,15 @@ Mods: {
 					'''
 					Used for asphalt recipes
 					'Getting more asphalt in your asphalt every day.'
+					'''
+			}
+
+			AsphaltUseTimePotion: {
+				DisplayName: Asphalt Swing Potion
+				Tooltip:
+					'''
+					70% faster weapon use time
+					'This probably isn't good for your health'
 					'''
 			}
 		}
