@@ -23,7 +23,7 @@ namespace AsphaltMod.Content.Items.Equippable
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.accRunSpeed = 15f;
+            player.accRunSpeed = 10f;
         }
 
         public override void AddRecipes()

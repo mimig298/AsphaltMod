@@ -120,6 +120,11 @@ Mods: {
 					'This probably isn't good for your health'
 					'''
 			}
+
+			DenseAsphalt: {
+				DisplayName: Dense Asphalt
+				Tooltip: Massively increases running speed
+			}
 		}
 
 		Projectiles: {

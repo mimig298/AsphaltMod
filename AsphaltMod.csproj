@@ -8,6 +8,16 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <AdditionalFiles Remove="Content\Tiles\AsphaltMachineHoriz.png" />
+    <AdditionalFiles Remove="Content\Tiles\AsphaltMachineVert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Content\Tiles\AsphaltMachine.pdn" />
+    <None Remove="Content\Tiles\AsphaltMachineHoriz.png" />
+    <None Remove="Content\Tiles\AsphaltMachineVert.png" />
+    <None Remove="Content\Tiles\DenseAsphalt.pdn" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
   </ItemGroup>
 </Project>

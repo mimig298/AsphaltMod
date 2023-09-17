@@ -17,8 +17,6 @@ namespace AsphaltMod.Content.Items.Placeable
         public override void SetDefaults()
         {
             Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.AsphaltBrick>());
-            Item.width = 12;
-            Item.height = 12;
         }
 
         public override void AddRecipes()
