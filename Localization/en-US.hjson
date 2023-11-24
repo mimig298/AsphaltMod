@@ -125,6 +125,16 @@ Mods: {
 				DisplayName: Dense Asphalt
 				Tooltip: Massively increases running speed
 			}
+
+			DenseAsphaltPlatform: {
+				DisplayName: Dense Asphalt Platform
+				Tooltip: The best arena block ever.
+			}
+
+			AsphaltStaff: {
+				DisplayName: Asphalt Staff
+				Tooltip: To magically shoot projectiles faster.
+			}
 		}
 
 		Projectiles: {
@@ -132,6 +142,7 @@ Mods: {
 			AsphaltBullet.DisplayName: Asphalt Bullet
 			AsphaltDrill.DisplayName: Asphalt Drill
 			AsphaltChainsaw.DisplayName: Asphalt Chainsaw
+			AsphaltBolt.DisplayName: Asphalt Bolt
 		}
 
 		Tiles.AsphaltMachine.MapEntry: Asphalt Machine

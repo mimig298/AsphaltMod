@@ -12,7 +12,7 @@ namespace AsphaltMod.Common.Players
             ultrarun = false;
         }
 
-        public override void PostUpdateRunSpeeds()
+        public override void PreUpdate()
         {
             if (ultrarun)
             {

@@ -16,7 +16,7 @@ namespace AsphaltMod.Content.Items.Placeable
             CreateRecipe()
                 .AddIngredient(ItemID.AsphaltBlock, 3)
                 .AddIngredient(ItemID.Gel, 1)
-                .AddTile(ModContent.TileType<Tiles.AsphaltMachine>())
+                .AddTile<Tiles.AsphaltMachine>()
                 .Register();
         }
     }
