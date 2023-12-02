@@ -4,6 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent;
+using Terraria.Audio;
 
 namespace AsphaltMod.Content.Projectiles
 {
@@ -41,6 +42,15 @@ namespace AsphaltMod.Content.Projectiles
             }
 
             return true;
+        }
+
+        public override void OnKill(int timeLeft)
+        {
+            SoundEngine.PlaySound(SoundID.Dig, Projectile.position);
+            for (int k = 0; k < 3; k++)
+            {
+                Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, DustID.Asphalt);
+            }
         }
     }
 }

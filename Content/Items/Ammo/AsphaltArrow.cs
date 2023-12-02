@@ -23,7 +23,7 @@ namespace AsphaltMod.Content.Items.Ammo
             Item.value = 12;
             Item.rare = ItemRarityID.LightRed;
             Item.shoot = ModContent.ProjectileType<Projectiles.AsphaltArrow>();
-            Item.shootSpeed = 5;
+            Item.shootSpeed = 7;
             Item.ammo = AmmoID.Arrow;
         }
 

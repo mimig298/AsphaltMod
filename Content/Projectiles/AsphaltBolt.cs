@@ -34,7 +34,7 @@ namespace AsphaltMod.Content.Projectiles
             }
         }
 
-        public override void Kill(int timeLeft)
+        public override void OnKill(int timeLeft)
         {
             SoundEngine.PlaySound(in SoundID.Item8, Projectile.position);
             for (int k = 0; k < 15; k++)

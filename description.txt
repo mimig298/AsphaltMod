@@ -1,3 +1,9 @@
-Tired of the asphalt memes on Reddit? I sure hope not, as I have compilated most of them into a mod!
+This is The Asphalt Mod, a mod centred on adding multiple items related to everyone's favourite block: Asphalt!
 
-This mod couldn't have been done without the creators of the memes, so an enormous thanks to them!
+This mod has been a work in progress for too long - it's finally time to make it public for everyone to enjoy. Well, it's still a work in progress, despite this being version 1.0.1, but there's still so much more I want to add and I'd like to take it nice and slow.
+
+The Asphalt Mod currently adds 4 weapons, 5 tools, 2 accessories, 2 potions, 12 building blocks and furniture, and a whole lot of asphalt! You can add a new material to explore and use in your post-Mechs journey, allowing you to become the fastest living creature in this world! Despite not being very practical, you can always add a little fun to an already fun game.
+
+But, why, you ask? Good question. I started this sometime project back in early 2023, when Terraria was nothing but asphalt memes, and have been very slowly working on it. But now, it's finally here for you to enjoy!
+
+Due to it being so small, there's no need for a wiki or anything fancy like that. You can figure 99% of stuff out in-game even without any QOL mods.

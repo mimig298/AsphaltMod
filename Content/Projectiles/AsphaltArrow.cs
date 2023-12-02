@@ -1,6 +1,8 @@
 ﻿using Terraria;
 using Terraria.ID;
+using Terraria.Audio;
 using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
 
 namespace AsphaltMod.Content.Projectiles
 {
@@ -19,6 +21,14 @@ namespace AsphaltMod.Content.Projectiles
             AIType = ProjectileID.WoodenArrowFriendly;
         }
 
+        public override void OnKill(int timeLeft)
+        {
+            SoundEngine.PlaySound(SoundID.Dig, Projectile.position);
+            for (int k = 0; k < 6; k++)
+            {
+                Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, DustID.Asphalt);
+            }
+        }
         // Additional hooks/methods here.
     }
 }
