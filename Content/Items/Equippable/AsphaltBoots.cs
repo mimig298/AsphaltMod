@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 namespace AsphaltMod.Content.Items.Equippable
 {
     [AutoloadEquip(EquipType.Shoes)]
-    internal class AsphaltBoots : ModItem
+    public class AsphaltBoots : ModItem
     {
         public override void SetStaticDefaults()
         {
