@@ -37,7 +37,6 @@ namespace AsphaltMod.Content.Items.Weapons
             Item.damage = 27; // Sets the item's damage. Note that projectiles shot by this weapon will use its and the used ammunition's damage added together.
             Item.knockBack = 1.5f; // Sets the item's knockback. Note that projectiles shot by this weapon will use its and the used ammunition's knockback added together.
             Item.noMelee = true; // So the item's animation doesn't do damage.
-            Item.
 
             // Gun Properties
             Item.shoot = ProjectileID.PurificationPowder; // For some reason, all the guns in the vanilla source have this.
