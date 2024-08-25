@@ -26,12 +26,12 @@ namespace AsphaltMod.Content.Tiles.Furniture
             TileID.Sets.DisableSmartCursor[Type] = true;
 
             DustType = DustID.Asphalt;
-            AdjTiles = new int[] { TileID.Chairs };
+            AdjTiles = [TileID.Chairs];
             AddMapEntry(new Color(53, 53, 47), Language.GetText("MapObject.Chair"));
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsChair);
 
             TileObjectData.newTile.CopyFrom(TileObjectData.Style1x2);
-            TileObjectData.newTile.CoordinateHeights = new[] { 16, 18 };
+            TileObjectData.newTile.CoordinateHeights = [16, 18];
             TileObjectData.newTile.CoordinatePaddingFix = new Point16(0, 2);
             TileObjectData.newTile.Direction = TileObjectDirection.PlaceLeft;
 

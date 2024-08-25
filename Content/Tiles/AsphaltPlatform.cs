@@ -19,7 +19,7 @@ namespace AsphaltMod.Content.Tiles
             Main.tileLavaDeath[Type] = true;
 
             TileID.Sets.Platforms[Type] = true;
-            TileObjectData.newTile.CoordinateHeights = new int[] { 16 };
+            TileObjectData.newTile.CoordinateHeights = [16];
             TileObjectData.newTile.CoordinateWidth = 16;
             TileObjectData.newTile.CoordinatePadding = 2;
 
@@ -34,7 +34,7 @@ namespace AsphaltMod.Content.Tiles
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsDoor);
             DustType = DustID.Asphalt;
             TileID.Sets.DisableSmartCursor[Type] = true;
-            AdjTiles = new int[] { TileID.Platforms };
+            AdjTiles = [TileID.Platforms];
             AddMapEntry(new Color(53, 53, 47));
 
             // Set other values here

@@ -25,7 +25,7 @@ namespace AsphaltMod.Content.Tiles.Furniture
             TileID.Sets.OpenDoorID[Type] = ModContent.TileType<AsphaltDoorOpen>();
 
             DustType = DustID.Asphalt;
-            AdjTiles = new int[] { TileID.ClosedDoor };
+            AdjTiles = [TileID.ClosedDoor];
 
             TileObjectData.newTile.CopyFrom(TileObjectData.GetTileData(TileID.ClosedDoor, 0));
             TileObjectData.addTile(Type);

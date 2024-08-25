@@ -20,10 +20,10 @@ namespace AsphaltMod.Content.Tiles.Furniture
             TileID.Sets.IgnoredByNpcStepUp[Type] = true;
 
             DustType = DustID.Asphalt;
-            AdjTiles = new int[] { TileID.WorkBenches };
+            AdjTiles = [TileID.WorkBenches];
 
             TileObjectData.newTile.CopyFrom(TileObjectData.Style2x1);
-            TileObjectData.newTile.CoordinateHeights = new[] { 18 };
+            TileObjectData.newTile.CoordinateHeights = [18];
             TileObjectData.addTile(Type);
 
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);

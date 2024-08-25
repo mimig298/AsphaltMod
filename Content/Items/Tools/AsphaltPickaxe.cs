@@ -1,5 +1,4 @@
-﻿using Microsoft.Xna.Framework;
-using Terraria;
+﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -27,10 +26,9 @@ namespace AsphaltMod.Content.Items.Tools
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
 
-            Item.pick = 190; // How strong the pickaxe is, see https://terraria.wiki.gg/wiki/Pickaxe_power for a list of common values
+            Item.pick = 190;
         }
 
-        // Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
         public override void AddRecipes()
         {
             CreateRecipe()

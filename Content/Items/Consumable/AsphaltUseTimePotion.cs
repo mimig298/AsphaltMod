@@ -11,12 +11,12 @@ namespace AsphaltMod.Content.Items.Consumable
         {
             Item.ResearchUnlockCount = 20;
 
-            ItemID.Sets.DrinkParticleColors[Type] = new Color[3]
-            {
+            ItemID.Sets.DrinkParticleColors[Type] =
+            [
                 new Color(32, 33, 34),
                 new Color(18, 21, 25),
                 new Color(67, 66, 56)
-            };
+            ];
         }
 
         public override void SetDefaults()

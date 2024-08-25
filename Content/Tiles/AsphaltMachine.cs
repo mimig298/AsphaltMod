@@ -19,7 +19,7 @@ namespace AsphaltMod.Content.Tiles
             TileID.Sets.IgnoredByNpcStepUp[Type] = true;
 
             TileObjectData.newTile.CopyFrom(TileObjectData.Style3x2);
-            TileObjectData.newTile.CoordinateHeights = new int[] { 16, 18 };
+            TileObjectData.newTile.CoordinateHeights = [16, 18];
             TileObjectData.newTile.CoordinatePaddingFix = new Point16(0, 2);
             TileObjectData.newTile.StyleLineSkip = 9;
             TileObjectData.addTile(Type);
@@ -27,7 +27,7 @@ namespace AsphaltMod.Content.Tiles
             AnimationFrameHeight = 38;
 
             DustType = DustID.Asphalt;
-            AdjTiles = new int[] { TileID.Blendomatic };
+            AdjTiles = [TileID.Blendomatic];
             LocalizedText mapEntryName = CreateMapEntryName();
             AddMapEntry(new Color(99, 99, 99), mapEntryName);
         }
