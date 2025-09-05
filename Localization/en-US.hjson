@@ -140,7 +140,7 @@ Mods: {
 				DisplayName: Asphalt Rope
 				Tooltip:
 					'''
-					{ItemTooltip.Rope}
+					{$ItemTooltip.Rope}
 					To climb stuff faster.
 					'''
 			}
