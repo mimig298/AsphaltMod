@@ -6,6 +6,11 @@ namespace AsphaltMod.Content.Items.Placeable
 {
     public class DenseAsphalt : ModItem
     {
+        public override void SetStaticDefaults()
+        {
+            Item.ResearchUnlockCount = 100;
+        }
+
         public override void SetDefaults()
         {
             Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.DenseAsphalt>());

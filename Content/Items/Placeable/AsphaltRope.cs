@@ -9,6 +9,7 @@ public class AsphaltRope : ModItem
 {
     public override void SetStaticDefaults()
     {
+        Item.ResearchUnlockCount = 100;
         ItemID.Sets.SortingPriorityRopes[Type] = 1;
     }
 

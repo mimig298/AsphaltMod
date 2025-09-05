@@ -9,6 +9,7 @@ namespace AsphaltMod.Content.Items.Weapons
         public override void SetStaticDefaults()
         {
             Item.staff[Type] = true;
+            ItemID.Sets.CanBePlacedOnWeaponRacks[Type] = true;
         }
 
         public override void SetDefaults()
