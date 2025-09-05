@@ -85,7 +85,7 @@ Mods: {
 
 			AsphaltAxe: {
 				DisplayName: Asphalt Axe
-				Tooltip: To cut stuff faster.
+				Tooltip: To cut stuff faster
 			}
 
 			AsphaltHammer: {
@@ -135,6 +135,17 @@ Mods: {
 				DisplayName: Asphalt Staff
 				Tooltip: To magically shoot projectiles faster.
 			}
+
+			AsphaltRope: {
+				DisplayName: Asphalt Rope
+				Tooltip:
+					'''
+					{ItemTooltip.Rope}
+					To climb stuff faster.
+					'''
+			}
+
+			AsphaltRopeCoil.DisplayName: Asphalt Rope Coil
 		}
 
 		Projectiles: {
@@ -143,6 +154,7 @@ Mods: {
 			AsphaltDrill.DisplayName: Asphalt Drill
 			AsphaltChainsaw.DisplayName: Asphalt Chainsaw
 			AsphaltBolt.DisplayName: Asphalt Bolt
+			AsphaltRopeCoil.DisplayName: Asphalt Rope Coil
 		}
 
 		Tiles.AsphaltMachine.MapEntry: Asphalt Machine

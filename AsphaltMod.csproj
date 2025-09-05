@@ -4,6 +4,7 @@
   <PropertyGroup>
     <AssemblyName>AsphaltMod</AssemblyName>
     <LangVersion>latest</LangVersion>
+	<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
   </PropertyGroup>
   <ItemGroup>
     <AdditionalFiles Remove="Content\Tiles\AsphaltMachineHoriz.png" />
@@ -14,7 +15,5 @@
     <None Remove="Content\Tiles\AsphaltMachineHoriz.png" />
     <None Remove="Content\Tiles\AsphaltMachineVert.png" />
     <None Remove="Content\Tiles\DenseAsphalt.pdn" />
-  </ItemGroup>
-  <ItemGroup>
   </ItemGroup>
 </Project>
