@@ -15,6 +15,11 @@ namespace AsphaltMod.Content.Tiles.Furniture
     {
         private Asset<Texture2D> flameTexture;
 
+        public override void Load()
+        {
+            flameTexture = ModContent.Request<Texture2D>("AsphaltMod/Content/Tiles/Furniture/AsphaltLamp_Flame");
+        }
+
         public override void SetStaticDefaults()
         {
             Main.tileLighted[Type] = true;
@@ -34,11 +39,6 @@ namespace AsphaltMod.Content.Tiles.Furniture
             DustType = DustID.Asphalt;
             AddMapEntry(new Color(53, 53, 47), Language.GetText("MapObject.FloorLamp"));
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
-
-            if (!Main.dedServ)
-            {
-                flameTexture = ModContent.Request<Texture2D>("AsphaltMod/Content/Tiles/Furniture/AsphaltLamp_Flame");
-            }
         }
 
         public override void HitWire(int i, int j)
