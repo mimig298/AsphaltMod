@@ -8,12 +8,13 @@ namespace AsphaltMod.Content.Items.Tools
     {
         public override void SetDefaults()
         {
-            Item.damage = 17;
+            bool balanced = ((AsphaltMod)Mod).BalanceChanges;
+
+            Item.damage = balanced ? 8 : 17;
             Item.DamageType = DamageClass.Melee;
             Item.width = 36;
             Item.height = 36;
-            Item.useTime = 7;
-            Item.useAnimation = 7;
+            Item.useTime = Item.useAnimation = balanced ? 9 : 7;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.knockBack = 2;
             Item.value = Item.sellPrice(gold: 1, silver: 75);
@@ -21,7 +22,7 @@ namespace AsphaltMod.Content.Items.Tools
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
 
-            Item.hammer = 80;
+            Item.hammer = balanced ? 75 : 80;
         }
 
         public override void AddRecipes()

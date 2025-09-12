@@ -1,4 +1,5 @@
 ﻿using Terraria;
+using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -14,9 +15,12 @@ namespace AsphaltMod.Content.Items.Weapons
 
         public override void SetDefaults()
         {
-            Item.DefaultToStaff(ModContent.ProjectileType<Projectiles.AsphaltBolt>(), 15, 5, 7);
-            Item.SetWeaponValues(35, 2);
+            bool balanced = ((AsphaltMod)Mod).BalanceChanges;
 
+            Item.DefaultToStaff(ModContent.ProjectileType<Projectiles.AsphaltBolt>(), balanced ? 9 : 20, 5, balanced ? 10 : 7);
+            Item.SetWeaponValues(balanced ? 18 : 35, balanced ? 1.3f : 2);
+
+            Item.UseSound = SoundID.Item43 with { Volume = 0.7f, MaxInstances = 2, SoundLimitBehavior = SoundLimitBehavior.IgnoreNew };
             Item.rare = ItemRarityID.LightRed;
             Item.value = 12500;
         }

@@ -14,7 +14,7 @@ namespace AsphaltMod.Content.Items.Weapons
 
         public override void SetDefaults()
 		{
-			Item.damage = 50;
+			Item.damage = ((AsphaltMod)Mod).BalanceChanges ? 26 : 50;
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 40;
 			Item.height = 40;

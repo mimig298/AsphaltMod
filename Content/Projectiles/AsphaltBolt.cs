@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ID;
 using Terraria.Audio;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace AsphaltMod.Content.Projectiles
@@ -10,13 +10,16 @@ namespace AsphaltMod.Content.Projectiles
     {
         public override void SetDefaults()
         {
+            bool balanced = ((AsphaltMod)Mod).BalanceChanges;
+
             Projectile.width = 10;
             Projectile.height = 10;
             Projectile.aiStyle = 29;
             Projectile.friendly = true;
             Projectile.DamageType = DamageClass.Magic;
-            Projectile.penetrate = 3;
+            Projectile.penetrate = balanced ? 1 : 3;
             Projectile.timeLeft = 400;
+            Projectile.extraUpdates = balanced ? 1 : 0;
         }
 
         public override void AI()

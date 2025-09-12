@@ -3,12 +3,14 @@ Mods: {
 		Buffs: {
 			AsphaltSpeed: {
 				DisplayName: Asphalt Speed Boost
-				Description: Asphalt movement enabled
+				Description: Asphalt movement enabled, decreased life regeneration
+				DescriptionOld: Asphalt movement enabled, losing life
 			}
 
 			AsphaltUseTime: {
 				DisplayName: Asphalt Use Time
-				Description: 70% faster weapon use time
+				Description: "{0}% faster weapon speed, decreased knockback"
+				DescriptionOld: "{0}% faster weapon speed, losing life"
 			}
 		}
 
@@ -30,6 +32,13 @@ Mods: {
 			AsphaltClaws: {
 				DisplayName: Asphalt Glove
 				Tooltip:
+					'''
+					Increases melee knockback
+					60% increased melee speed
+					Enables auto swing for melee weapons
+					Increases the size of melee weapons
+					'''
+				TooltipOld:
 					'''
 					Increases melee knockback
 					12% increased melee damage
@@ -116,7 +125,7 @@ Mods: {
 				DisplayName: Asphalt Swing Potion
 				Tooltip:
 					'''
-					70% faster weapon use time
+					{0}% faster weapon speed
 					'This probably isn't good for your health'
 					'''
 			}
@@ -158,5 +167,21 @@ Mods: {
 		}
 
 		Tiles.AsphaltMachine.MapEntry: Asphalt Machine
+
+		Configs: {
+			AsphaltModConfig: {
+				DisplayName: Asphalt Mod Config
+
+				BalanceChanges: {
+					Label: Balance Changes
+					Tooltip:
+						'''
+						Nerf the stats of most asphalt items to make them balanced with normal gameplay.
+						Disable this option for the original overpowered stats from earlier Asphalt Mod versions.
+						Note that newer items may not be affected by this option since they were already made with balance in mind.
+						'''
+				}
+			}
+		}
 	}
 }

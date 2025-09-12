@@ -14,7 +14,9 @@ namespace AsphaltMod.Content.Items.Weapons
 
         public override void SetDefaults() 
         {
-            Item.DefaultToBow(8, 12, true);
+            bool balanced = ((AsphaltMod)Mod).BalanceChanges;
+
+            Item.DefaultToBow(balanced ? 10 : 8, 12, true);
 
             Item.width = 18;
             Item.height = 36;
@@ -24,8 +26,8 @@ namespace AsphaltMod.Content.Items.Weapons
             Item.UseSound = SoundID.Item5;
 
             Item.DamageType = DamageClass.Ranged;
-            Item.damage = 37;
-            Item.knockBack = 1.7f;
+            Item.damage = balanced ? 19 : 37;
+            Item.knockBack = balanced ? 1.2f : 1.7f;
 
             Item.shoot = ProjectileID.PurificationPowder;
             Item.useAmmo = AmmoID.Arrow;

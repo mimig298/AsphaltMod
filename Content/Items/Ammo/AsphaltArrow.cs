@@ -13,11 +13,12 @@ namespace AsphaltMod.Content.Items.Ammo
 
         public override void SetDefaults() 
         {
-            Item.damage = 12;
+            bool balanced = ((AsphaltMod)Mod).BalanceChanges;
+            Item.damage = balanced ? 6 : 12;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 14;
             Item.height = 32;
-            Item.maxStack = 9999;
+            Item.maxStack = Item.CommonMaxStack;
             Item.consumable = true;
             Item.knockBack = 1.2f;
             Item.value = 12;

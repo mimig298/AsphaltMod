@@ -8,7 +8,9 @@ namespace AsphaltMod.Content.Items.Tools
     {
         public override void SetDefaults()
         {
-            Item.damage = 25;
+            bool balanced = ((AsphaltMod)Mod).BalanceChanges;
+
+            Item.damage = balanced ? 10 : 25;
             Item.DamageType = DamageClass.Melee;
             Item.width = 40;
             Item.height = 32;
@@ -21,7 +23,7 @@ namespace AsphaltMod.Content.Items.Tools
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
 
-            Item.axe = 20;
+            Item.axe = balanced ? 19 : 20;
         }
 
         public override void AddRecipes()

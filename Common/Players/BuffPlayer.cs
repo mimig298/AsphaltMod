@@ -5,20 +5,47 @@ namespace AsphaltMod.Common.Players
 {
     public class BuffPlayer : ModPlayer
     {
-        public bool AsphaltSpeedRegen;
+        public bool asphaltMoveSpeed;
+        public bool asphaltSwingSpeed;
 
         public override void ResetEffects()
         {
-            AsphaltSpeedRegen = false;
+            asphaltMoveSpeed = false;
+            asphaltSwingSpeed = false;
         }
 
         public override void UpdateBadLifeRegen()
         {
-            if (AsphaltSpeedRegen)
+            if (((AsphaltMod)Mod).BalanceChanges)
             {
-                Player.lifeRegen = 0;
+                if (asphaltMoveSpeed)
+                {
+                    if (Player.lifeRegen > 0)
+                        Player.lifeRegen = 0;
+                    Player.lifeRegenTime = 0;
+                }
+            }
+            else if (asphaltMoveSpeed || asphaltSwingSpeed)
+            {
+                if (Player.lifeRegen > 0)
+                    Player.lifeRegen = 0;
                 Player.lifeRegen -= 7;
             }
+        }
+
+        public override void PostUpdateRunSpeeds()
+        {
+            if (asphaltMoveSpeed && !((AsphaltMod)Mod).BalanceChanges)
+            {
+                Player.maxRunSpeed *= 3.5f;
+                Player.runSlowdown += 2f;
+            }
+        }
+
+        public override void PostUpdate()
+        {
+            if (asphaltMoveSpeed && ((AsphaltMod)Mod).BalanceChanges)
+                Player.powerrun = true;
         }
     }
 }
