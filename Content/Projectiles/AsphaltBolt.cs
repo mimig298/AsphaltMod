@@ -14,33 +14,25 @@ namespace AsphaltMod.Content.Projectiles
 
             Projectile.width = 10;
             Projectile.height = 10;
-            Projectile.aiStyle = 29;
             Projectile.friendly = true;
             Projectile.DamageType = DamageClass.Magic;
             Projectile.penetrate = balanced ? 1 : 3;
             Projectile.timeLeft = 400;
             Projectile.extraUpdates = balanced ? 1 : 0;
+            Projectile.alpha = 255;
         }
 
         public override void AI()
         {
-            for (int k = 0; k < 2; k++)
-            {
-                int dust = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, DustID.Asphalt, Projectile.velocity.X, Projectile.velocity.Y, 50, default, 1.2f);
-                Main.dust[dust].noGravity = true;
-                Main.dust[dust].velocity *= 0.3f;
-            }
-            if (Projectile.ai[1] == 0f)
-            {
-                Projectile.ai[1] = 1f;
-                SoundEngine.PlaySound(in SoundID.Item8, Projectile.position);
-            }
+            int dust = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, DustID.Asphalt, Projectile.velocity.X, Projectile.velocity.Y, 50, default, 1.2f);
+            Main.dust[dust].noGravity = true;
+            Main.dust[dust].velocity *= 0.3f;
         }
 
         public override void OnKill(int timeLeft)
         {
-            SoundEngine.PlaySound(in SoundID.Item8, Projectile.position);
-            for (int k = 0; k < 15; k++)
+            SoundEngine.PlaySound(SoundID.Item8, Projectile.position);
+            for (int k = 0; k < 7; k++)
             {
                 int dust = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, DustID.Asphalt, Projectile.oldVelocity.X, Projectile.oldVelocity.Y, 50, default, 1.2f);
                 Main.dust[dust].noGravity = true;
