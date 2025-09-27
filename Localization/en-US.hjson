@@ -12,6 +12,11 @@ Mods: {
 				Description: "{0}% faster weapon speed, decreased knockback"
 				DescriptionOld: "{0}% faster weapon speed, losing life"
 			}
+
+			AsphaltCarBuff: {
+				DisplayName: Asphalt Car
+				Description: Vroom vroom!
+			}
 		}
 
 		Items: {
@@ -155,6 +160,15 @@ Mods: {
 			}
 
 			AsphaltRopeCoil.DisplayName: Asphalt Rope Coil
+
+			AsphaltCarKeys: {
+				DisplayName: Asphalt Car Keys
+				Tooltip:
+					'''
+					Summons an Asphalt Car
+					Is the car made of asphalt? Or is it just the keys?
+					'''
+			}
 		}
 
 		Projectiles: {

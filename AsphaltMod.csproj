@@ -11,6 +11,7 @@
     <AdditionalFiles Remove="Content\Tiles\AsphaltMachineVert.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Content\Mounts\Asphalt Car.pdn" />
     <None Remove="Content\Tiles\AsphaltMachine.pdn" />
     <None Remove="Content\Tiles\AsphaltMachineHoriz.png" />
     <None Remove="Content\Tiles\AsphaltMachineVert.png" />
