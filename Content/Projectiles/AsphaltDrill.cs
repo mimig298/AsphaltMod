@@ -20,7 +20,7 @@ namespace AsphaltMod.Content.Projectiles
             Projectile.penetrate = -1;
             Projectile.DamageType = DamageClass.Melee;
             Projectile.ownerHitCheck = true;
-            Projectile.aiStyle = 20;
+            Projectile.aiStyle = ProjAIStyleID.Drill;
             Projectile.hide = true;
         }
     }

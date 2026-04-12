@@ -13,7 +13,7 @@ namespace AsphaltMod.Content.Projectiles
             bool balanced = ((AsphaltMod)Mod).BalanceChanges;
             Projectile.width = 2;
             Projectile.height = 10;
-            Projectile.aiStyle = 1;
+            Projectile.aiStyle = ProjAIStyleID.Arrow;
             Projectile.friendly = true;
             Projectile.noDropItem = true;
             Projectile.penetrate = balanced ? 2 : 3;

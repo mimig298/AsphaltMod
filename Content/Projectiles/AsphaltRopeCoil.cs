@@ -143,11 +143,11 @@ public class AsphaltRopeCoil : ModProjectile
 
             if (Main.tile[num296, num297].HasTile)
             {
-                if (Main.tile[num296, num297].TileType == 314 || TileID.Sets.Platforms[Main.tile[num296, num297].TileType])
+                if (Main.tile[num296, num297].TileType == TileID.MinecartTrack || TileID.Sets.Platforms[Main.tile[num296, num297].TileType])
                 {
                     flag13 = !flag13;
                 }
-                else if (Main.tileCut[Main.tile[num296, num297].TileType] || Main.tile[num296, num297].TileType == 165)
+                else if (Main.tileCut[Main.tile[num296, num297].TileType] || Main.tile[num296, num297].TileType == TileID.Stalactite)
                 {
                     flag13 = false;
                     WorldGen.KillTile(num296, num297);
