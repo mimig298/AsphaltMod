@@ -169,6 +169,15 @@ Mods: {
 					Is the car made of asphalt? Or is it just the keys?
 					'''
 			}
+
+			AsphaltBomb: {
+				DisplayName: Asphalt Bomb
+				Tooltip:
+					'''
+					{$ItemTooltip.Bomb}
+					Detonates faster than other explosives
+					'''
+			}
 		}
 
 		Projectiles: {
@@ -178,6 +187,7 @@ Mods: {
 			AsphaltChainsaw.DisplayName: Asphalt Chainsaw
 			AsphaltBolt.DisplayName: Asphalt Bolt
 			AsphaltRopeCoil.DisplayName: Asphalt Rope Coil
+			AsphaltBomb.DisplayName: Asphalt Bomb
 		}
 
 		Tiles.AsphaltMachine.MapEntry: Asphalt Machine
