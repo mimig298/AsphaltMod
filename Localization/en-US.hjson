@@ -178,6 +178,11 @@ Mods: {
 					Detonates faster than other explosives
 					'''
 			}
+
+			AsphaltSlimeBanner: {
+				DisplayName: Asphalt Slime Banner
+				Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.AsphaltMod.NPCs.AsphaltSlime.DisplayName}"
+			}
 		}
 
 		Projectiles: {
@@ -191,6 +196,13 @@ Mods: {
 		}
 
 		Tiles.AsphaltMachine.MapEntry: Asphalt Machine
+
+		NPCs: {
+			AsphaltSlime: {
+				DisplayName: Asphalt Slime
+				Bestiary: These slimes seem to have absorbed the asphalt from the surrounding environment, and it gave them some new speedy abilities.
+			}
+		}
 
 		Configs: {
 			AsphaltModConfig: {
