@@ -181,6 +181,11 @@ Items: {
 		DisplayName: Asphalt Slime Banner
 		Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.AsphaltMod.NPCs.AsphaltSlime.DisplayName}"
 	}
+
+	AsphaltHook: {
+		DisplayName: Asphalt Hook
+		Tooltip: To grab onto stuff faster.
+	}
 }
 
 Projectiles: {
@@ -191,6 +196,7 @@ Projectiles: {
 	AsphaltBolt.DisplayName: Asphalt Bolt
 	AsphaltRopeCoil.DisplayName: Asphalt Rope Coil
 	AsphaltBomb.DisplayName: Asphalt Bomb
+	AsphaltHook.DisplayName: Asphalt Hook
 }
 
 Tiles.AsphaltMachine.MapEntry: Asphalt Machine
