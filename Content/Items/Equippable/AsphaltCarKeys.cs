@@ -15,7 +15,7 @@ public class AsphaltCarKeys : ModItem
         Item.useAnimation = 20;
         Item.useStyle = ItemUseStyleID.HoldUp;
         Item.value = Item.sellPrice(gold: 4, silver: 50);
-        Item.UseSound = SoundID.Item22;
+        //Item.UseSound = SoundID.Item22;
         Item.noMelee = true;
         Item.mountType = ModContent.MountType<AsphaltCar>();
     }

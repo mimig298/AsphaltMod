@@ -44,6 +44,7 @@ public class CarPlayer : ModPlayer
     {
         if (Player.mount.Active && Player.mount.Type == ModContent.MountType<AsphaltCar>())
         {
+            drawInfo.drawPlayer.direction = velDirection;
             if (Player.velocity.X > 0)
             {
                 drawInfo.playerEffect &= ~SpriteEffects.FlipHorizontally;

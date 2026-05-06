@@ -2,9 +2,11 @@
 using AsphaltMod.Content.Buffs;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using ReLogic.Utilities;
 using System.Collections.Generic;
 using System.Linq;
 using Terraria;
+using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -14,6 +16,16 @@ namespace AsphaltMod.Content.Mounts;
 public class AsphaltCar : ModMount
 {
     private static Vector2 HitboxSize = new(172, 50);
+
+    internal static SoundStyle CarStartSound = new("AsphaltMod/Assets/Sounds/car_start", SoundType.Sound);
+    internal static SoundStyle CarLoopSound = new("AsphaltMod/Assets/Sounds/car_loop", SoundType.Sound)
+    {
+        IsLooped = true,
+        SoundLimitBehavior = SoundLimitBehavior.IgnoreNew,
+        PauseBehavior = PauseBehavior.PauseWithGame
+    };
+
+    private SlotId soundSlot;
 
     public override void SetStaticDefaults()
     {
@@ -25,6 +37,7 @@ public class AsphaltCar : ModMount
         MountData.flightTimeMax = 0;
 
         MountData.spawnDust = DustID.Asphalt;
+        MountData.spawnDustNoGravity = true;
         MountData.buff = ModContent.BuffType<AsphaltCarBuff>();
 
         MountData.totalFrames = 4;
@@ -58,12 +71,10 @@ public class AsphaltCar : ModMount
 
     public override void SetMount(Player player, ref bool skipDust)
     {
-        skipDust = true;
-    }
-
-    public override void Dismount(Player player, ref bool skipDust)
-    {
-        skipDust = true;
+        if (!SoundEngine.TryGetActiveSound(soundSlot, out _))
+        {
+            soundSlot = SoundEngine.PlaySound(CarStartSound, player.Center, soundInstance => SoundCallback(soundInstance, player));
+        }
     }
 
     public override void UpdateEffects(Player player)
@@ -111,7 +122,7 @@ public class AsphaltCar : ModMount
             foreach (NPC npc in Main.ActiveNPCs)
             {
                 if (npc.dontTakeDamage || npc.friendly || npc.immune[player.whoAmI] != 0 || !player.CanNPCBeHitByPlayerOrPlayerProjectile(npc) || !hitbox.Intersects(npc.Hitbox))
-                    return;
+                    continue;
 
                 float currentSpeed = speed / MountData.runSpeed;
                 int damage = Main.DamageVar(25f + 70f * currentSpeed, player.luck);
@@ -128,6 +139,13 @@ public class AsphaltCar : ModMount
                 npc.immune[player.whoAmI] = 30;
             }
         }
+
+        // Play sound
+
+        if (!SoundEngine.TryGetActiveSound(soundSlot, out _))
+        {
+            soundSlot = SoundEngine.PlaySound(CarLoopSound, player.Center, soundInstance => SoundCallback(soundInstance, player));
+        }
     }
 
     private Rectangle GetHitbox(Player player)
@@ -139,6 +157,22 @@ public class AsphaltCar : ModMount
         Vector2 bottom = carCenter + new Vector2(0, MountData.textureHeight / 8 - 2);
         Rectangle hitbox = new((int)bottom.X - (int)HitboxSize.X / 2, (int)bottom.Y - (int)HitboxSize.Y, (int)HitboxSize.X, (int)HitboxSize.Y);
         return hitbox;
+    }
+
+    private static bool SoundCallback(ActiveSound soundInstance, Player player)
+    {
+        if (player.mount.Active && player.mount.Type == ModContent.MountType<AsphaltCar>())
+        {
+            soundInstance.Volume = 1f;
+            soundInstance.Position = player.Center;
+            soundInstance.Pitch = (float.Abs(player.velocity.X) - 4) * 0.059f;
+        }
+        else
+        {
+            soundInstance.Volume -= 0.01f;
+            if (soundInstance.Pitch > -1f) soundInstance.Pitch -= 0.05f;
+        }
+        return soundInstance.Volume > 0f;
     }
 
     public override bool Draw(List<DrawData> playerDrawData, int drawType, Player drawPlayer, ref Texture2D texture, ref Texture2D glowTexture, ref Vector2 drawPosition, ref Rectangle frame, ref Color drawColor, ref Color glowColor, ref float rotation, ref SpriteEffects spriteEffects, ref Vector2 drawOrigin, ref float drawScale, float shadow)
