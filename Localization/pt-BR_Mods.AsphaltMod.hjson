@@ -1,7 +1,7 @@
 Buffs: {
 	AsphaltSpeed: {
 		DisplayName: Aumento de Velocidade de Asfalto
-		Description: Movimento de asfalto ativo, regenera��o de vida diminu�da
+		Description: Movimento de asfalto ativo, regeneração de vida diminuída
 		DescriptionOld: Movimento de asfalto ativo, perdendo vida
 	}
 
@@ -37,9 +37,9 @@ Items: {
 		Tooltip:
 			'''
 			Aumenta o recuo de ataques físicos
-			60% de aumento na velocidade de ataque f�sico
-			Permite o ataque automático com armas de ataque f�sico
-			Aumenta o tamanho das armas de ataque f�sico
+			60% de aumento na velocidade de ataque físico
+			Permite o ataque automático com armas de ataque físico
+			Aumenta o tamanho das armas de ataque físico
 			'''
 		TooltipOld:
 			'''
@@ -213,12 +213,12 @@ Configs: {
 		DisplayName: Configurações de Asphalt Mod
 
 		BalanceChanges: {
-			Label: Alterações de Balan�o
+			Label: Alterações de Balanço
 			Tooltip:
 				'''
 				Reduzir as estatísticas da maioria dos itens de asfalto para os tornar balanceados com gameplay normal.
 				Desative esta opção para as estatísticas superpoderosas originais de versões anteriores de Asphalt Mod.
-				Note que os itens mais recentes podem não ser afetados por esta opção pois já foram feitos com balan�o em mente.
+				Note que os itens mais recentes podem não ser afetados por esta opção pois já foram feitos com balanço em mente.
 				'''
 		}
 	}
