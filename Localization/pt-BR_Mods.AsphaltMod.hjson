@@ -1,0 +1,225 @@
+Buffs: {
+	AsphaltSpeed: {
+		DisplayName: Aumento de Velocidade de Asfalto
+		Description: Movimento de asfalto ativo, regenera��o de vida diminu�da
+		DescriptionOld: Movimento de asfalto ativo, perdendo vida
+	}
+
+	AsphaltUseTime: {
+		DisplayName: Tempo de Utilização de Asfalto
+		Description: Velocidade de ataque aumentada {0}%, menor recuo
+		DescriptionOld: Velocidade de ataque aumentada {0}%, perdendo vida
+	}
+
+	AsphaltCarBuff: {
+		DisplayName: Carro de Asfalto
+		Description: Vrum vrum!
+	}
+}
+
+Items: {
+	AsphaltPotion: {
+		DisplayName: Poção de Velocidade de Asfalto
+		Tooltip:
+			'''
+			Velocidade de movimento aumentada significativamente
+			'De certeza que podes beber isto?'
+			'''
+	}
+
+	AsphaltBoots: {
+		DisplayName: Botas de Asfalto
+		Tooltip: Permite correr extremamente depressa
+	}
+
+	AsphaltClaws: {
+		DisplayName: Luva de Asfalto
+		Tooltip:
+			'''
+			Aumenta o recuo de ataques físicos
+			60% de aumento na velocidade de ataque f�sico
+			Permite o ataque automático com armas de ataque f�sico
+			Aumenta o tamanho das armas de ataque f�sico
+			'''
+		TooltipOld:
+			'''
+			Aumenta o recuo de ataques físicos
+			12% de aumento no dano por ataques físicos
+			Velocidade de ataque físico duplicada
+			Permite o ataque automático com armas de ataque f�sico
+			Aumenta o tamanho das armas de ataque f�sico
+			'''
+	}
+
+	AsphaltPlatform: {
+		DisplayName: Plataforma de Asfalto
+		Tooltip: Para fazer as arenas melhores.
+	}
+
+	AsphaltPickaxe: {
+		DisplayName: Picareta de Asfalto
+		Tooltip: Para minerar cenas mais depressa.
+	}
+
+	AsphaltArrow: {
+		DisplayName: Flecha de Asfalto
+		// Tooltip: ""
+	}
+
+	AsphaltBullet: {
+		DisplayName: Bala de Asfalto
+		// Tooltip: ""
+	}
+
+	AsphaltBow: {
+		DisplayName: Arco de Asfalto
+		// Tooltip: ""
+	}
+
+	AsphaltGun: {
+		DisplayName: Pistola de Asfalto
+		Tooltip: Para disparar cenas mais depressa.
+	}
+
+	AsphaltSword: {
+		DisplayName: Espada de Asfalto
+		Tooltip: Para matar cenas mais depressa.
+	}
+
+	AsphaltBrickWall.DisplayName: Parede de Tijolos de Asfalto
+	AsphaltBrick.DisplayName: Tijolo de Asfalto
+	AsphaltWall.DisplayName: Parede de Asfalto
+	AsphaltTable.DisplayName: Mesa de Asfalto
+	AsphaltChair.DisplayName: Cadeira de Asfalto
+	AsphaltWorkbench.DisplayName: Bancada de Trabalho de Asfalto
+	AsphaltDoor.DisplayName: Porta de Asfalto
+	AsphaltLamp.DisplayName: Candeeiro de Asfalto
+
+	AsphaltAxe: {
+		DisplayName: Machado de Asfalto
+		Tooltip: Para cortar cenas mais depressa.
+	}
+
+	AsphaltHammer: {
+		DisplayName: Martelo de Asfalto
+		Tooltip: Para esmagar cenas mais depressa.
+	}
+
+	AsphaltDrill: {
+		DisplayName: Broca de Asfalto
+		Tooltip: Para ...brocar... ...escavar... não importa, tu fá-lo depressa.
+	}
+
+	AsphaltChainsaw: {
+		DisplayName: Serra-elétrica de Asfalto
+		Tooltip: Para ...cortar... serrar...? Esquece.
+	}
+
+	AsphaltMachine: {
+		DisplayName: Máquina de Asfalto
+		Tooltip:
+			'''
+			Usada em receitas de asfalto
+			'Adicionando mais asfalto ao seu asfalto todos os dias.'
+			'''
+	}
+
+	AsphaltUseTimePotion: {
+		DisplayName: Poção de Golpe de Asfalto
+		Tooltip:
+			'''
+			Velocidade de ataque fisico aumentada {0}%
+			'Isto não deve ser bom para a saúde'
+			'''
+	}
+
+	DenseAsphalt: {
+		DisplayName: Asfalto Denso
+		Tooltip: Aumenta velocidade de corrida massivamente
+	}
+
+	DenseAsphaltPlatform: {
+		DisplayName: Plataforma de Asfalto Denso
+		Tooltip: O melhor bloco para arenas de sempre.
+	}
+
+	AsphaltStaff: {
+		DisplayName: Cajado de Asfalto
+		Tooltip: Para disparar projéteis magicamente mais depressa.
+	}
+
+	AsphaltRope: {
+		DisplayName: Corda de Asfalto
+		Tooltip:
+			'''
+			{$ItemTooltip.Rope}
+			Para trepar cenas mais depressa.
+			'''
+	}
+
+	AsphaltRopeCoil.DisplayName: Rolo de Corda de Asfalto
+
+	AsphaltCarKeys: {
+		DisplayName: Chaves de Carro de Asfalto
+		Tooltip:
+			'''
+			Invoca um Carro de Asfalto
+			O carro é feito de asfalto? Ou são só as chaves?
+			'''
+	}
+
+	AsphaltBomb: {
+		DisplayName: Bomba de Asfalto
+		Tooltip:
+			'''
+			{$ItemTooltip.Bomb}
+			Para rebentar cenas mais depressa.
+			'''
+	}
+
+	AsphaltSlimeBanner: {
+		DisplayName: Bandeira da Geleia de Asfalto
+		// Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.AsphaltMod.NPCs.AsphaltSlime.DisplayName}"
+	}
+
+	AsphaltHook: {
+		DisplayName: Gancho de Asfalto
+		Tooltip: Para se agarrar a cenas mais depressa.
+	}
+}
+
+Projectiles: {
+	AsphaltArrow.DisplayName: Flecha de Asfalto
+	AsphaltBullet.DisplayName: Bala de Asfalto
+	AsphaltDrill.DisplayName: Broca de Asfalto
+	AsphaltChainsaw.DisplayName: Serra-elétrica de Asfalto
+	AsphaltBolt.DisplayName: Raio de Asfalto
+	AsphaltRopeCoil.DisplayName: Rolo de Corda de Asfalto
+	AsphaltBomb.DisplayName: Bomba de Asfalto
+	AsphaltHook.DisplayName: Gancho de Asfalto
+}
+
+Tiles.AsphaltMachine.MapEntry: Máquina de Asfalto
+
+NPCs: {
+	AsphaltSlime: {
+		DisplayName: Geleia de Asfalto
+		Bestiary: Estas geleias parecem ter absorvido o asfalto do ambiente ao seu redor, e isso deu-lhes umas novas abilitades velozes.
+	}
+}
+
+Configs: {
+	AsphaltModConfig: {
+		DisplayName: Configurações de Asphalt Mod
+
+		BalanceChanges: {
+			Label: Alterações de Balan�o
+			Tooltip:
+				'''
+				Reduzir as estatísticas da maioria dos itens de asfalto para os tornar balanceados com gameplay normal.
+				Desative esta opção para as estatísticas superpoderosas originais de versões anteriores de Asphalt Mod.
+				Note que os itens mais recentes podem não ser afetados por esta opção pois já foram feitos com balan�o em mente.
+				'''
+		}
+	}
+}

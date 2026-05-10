@@ -173,7 +173,7 @@ Items: {
 		Tooltip:
 			'''
 			{$ItemTooltip.Bomb}
-			Detonates faster than other explosives
+			To blow up stuff faster.
 			'''
 	}
 
