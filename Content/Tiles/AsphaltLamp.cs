@@ -7,7 +7,6 @@ using Terraria.Enums;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Terraria.Localization;
-using Terraria.DataStructures;
 
 namespace AsphaltMod.Content.Tiles
 {
@@ -63,14 +62,6 @@ namespace AsphaltMod.Content.Tiles
             }
         }
 
-        public override void SetSpriteEffects(int i, int j, ref SpriteEffects spriteEffects)
-        {
-            if (i % 2 == 1)
-            {
-                spriteEffects = SpriteEffects.FlipHorizontally;
-            }
-        }
-
         public override void ModifyLight(int i, int j, ref float r, ref float g, ref float b)
         {
             Tile tile = Main.tile[i, j];
@@ -82,63 +73,10 @@ namespace AsphaltMod.Content.Tiles
             }
         }
 
-        public override void DrawEffects(int i, int j, SpriteBatch spriteBatch, ref TileDrawInfo drawData)
-        {
-            if (Main.gamePaused || !Main.instance.IsActive || Lighting.UpdateEveryFrame && !Main.rand.NextBool(4))
-            {
-                return;
-            }
-
-            Tile tile = Main.tile[i, j];
-            short frameX = tile.TileFrameX;
-            short frameY = tile.TileFrameY;
-
-            if (frameX != 0 || !Main.rand.NextBool(40))
-            {
-                return;
-            }
-
-            int style = frameY / 54;
-
-            if (frameY / 18 % 3 == 0) 
-            {
-                int dustChoice = -1;
-
-                if (style == 0)
-                {
-                    dustChoice = DustID.Torch;
-                }
-
-                if (dustChoice != -1)
-                {
-                    var dust = Dust.NewDustDirect(new Vector2(i * 16 + 4, j * 16 + 2), 4, 4, dustChoice, 0f, 0f, 100, default, 1f);
-
-                    if (!Main.rand.NextBool(3))
-                    {
-                        dust.noGravity = true;
-                    }
-
-                    dust.velocity *= 0.3f;
-                    dust.velocity.Y -= 1.5f;
-                }
-            }
-        }
-
         public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
         {
             SpriteEffects effects = SpriteEffects.None;
-
-            if (i % 2 == 1)
-            {
-                effects = SpriteEffects.FlipHorizontally;
-            }
-
-            Vector2 zero = new(Main.offScreenRange, Main.offScreenRange);
-
-            if (Main.drawToScreen)
-            {
-                zero = Vector2.Zero;
-            }
+            Vector2 zero = Main.drawToScreen ? Vector2.Zero : new(Main.offScreenRange);
 
             Tile tile = Main.tile[i, j];
             int width = 16;
