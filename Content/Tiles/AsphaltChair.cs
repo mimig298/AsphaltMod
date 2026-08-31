@@ -9,7 +9,7 @@ using Terraria.Enums;
 using Terraria.GameContent;
 using Terraria.GameContent.ObjectInteractions;
 
-namespace AsphaltMod.Content.Tiles.Furniture
+namespace AsphaltMod.Content.Tiles
 {
     public class AsphaltChair : ModTile
     {
@@ -98,7 +98,7 @@ namespace AsphaltMod.Content.Tiles.Furniture
 
             player.noThrow = 2;
             player.cursorItemIconEnabled = true;
-            player.cursorItemIconID = ModContent.ItemType<Items.Placeable.Furniture.AsphaltChair>();
+            player.cursorItemIconID = ModContent.ItemType<Items.Placeable.AsphaltChair>();
 
             if (Main.tile[i, j].TileFrameX / 18 < 1)
             {

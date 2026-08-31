@@ -1,26 +1,26 @@
-﻿using AsphaltMod.Content.Tiles.Furniture;
-using Terraria;
+﻿using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace AsphaltMod.Content.Items.Placeable.Furniture
+namespace AsphaltMod.Content.Items.Placeable
 {
-    public class AsphaltDoor : ModItem
+    public class AsphaltWorkbench : ModItem
     {
         public override LocalizedText Tooltip => LocalizedText.Empty;
 
         public override void SetDefaults()
         {
-            Item.DefaultToPlaceableTile(ModContent.TileType<AsphaltDoorClosed>());
-            Item.width = 18;
-            Item.height = 32;
+            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.AsphaltWorkbench>());
+            Item.width = 32;
+            Item.height = 18;
+            Item.value = Item.sellPrice(copper: 30);
         }
 
         public override void AddRecipes()
         {
             CreateRecipe()
-                .AddIngredient(ItemID.AsphaltBlock, 6)
+                .AddIngredient(ItemID.AsphaltBlock, 10)
                 .AddTile(ModContent.TileType<Tiles.AsphaltMachine>())
                 .Register();
         }

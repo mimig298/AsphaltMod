@@ -5,9 +5,9 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Terraria.Localization;
 using Terraria.GameContent.ObjectInteractions;
-using AsphaltMod.Content.Items.Placeable.Furniture;
+using AsphaltMod.Content.Items.Placeable;
 
-namespace AsphaltMod.Content.Tiles.Furniture
+namespace AsphaltMod.Content.Tiles
 {
     public class AsphaltDoorClosed : ModTile
     {

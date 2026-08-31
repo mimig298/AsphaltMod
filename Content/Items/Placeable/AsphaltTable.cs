@@ -3,28 +3,24 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace AsphaltMod.Content.Items.Placeable.Furniture
+namespace AsphaltMod.Content.Items.Placeable
 {
-    public class AsphaltChair : ModItem
+    public class AsphaltTable : ModItem
     {
         public override LocalizedText Tooltip => LocalizedText.Empty;
 
-        public override void SetStaticDefaults()
-        {
-            Item.ResearchUnlockCount = 3;
-        }
-
         public override void SetDefaults()
         {
-            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.Furniture.AsphaltChair>());
-            Item.width = 16;
-            Item.height = 32;
+            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.AsphaltTable>());
+            Item.width = 30;
+            Item.height = 22;
+            Item.value = Item.sellPrice(copper: 60);
         }
 
         public override void AddRecipes()
         {
             CreateRecipe()
-                .AddIngredient(ItemID.AsphaltBlock, 4)
+                .AddIngredient(ItemID.AsphaltBlock, 8)
                 .AddTile(ModContent.TileType<Tiles.AsphaltMachine>())
                 .Register();
         }

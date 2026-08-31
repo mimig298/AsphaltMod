@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Localization;
 
-namespace AsphaltMod.Content.Items.Placeable.Furniture
+namespace AsphaltMod.Content.Items.Placeable
 {
     public class AsphaltLamp : ModItem
     {
@@ -11,9 +11,10 @@ namespace AsphaltMod.Content.Items.Placeable.Furniture
 
         public override void SetDefaults()
         {
-            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.Furniture.AsphaltLamp>());
+            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.AsphaltLamp>());
             Item.width = 10;
             Item.height = 30;
+            Item.value = Item.sellPrice(silver: 1);
         }
 
         public override void AddRecipes()

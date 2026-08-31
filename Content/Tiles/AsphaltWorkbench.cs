@@ -5,9 +5,9 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Terraria.Localization;
 
-namespace AsphaltMod.Content.Tiles.Furniture
+namespace AsphaltMod.Content.Tiles
 {
-    public class AsphaltTable : ModTile
+    public class AsphaltWorkbench : ModTile
     {
         public override void SetStaticDefaults()
         {
@@ -20,15 +20,14 @@ namespace AsphaltMod.Content.Tiles.Furniture
             TileID.Sets.IgnoredByNpcStepUp[Type] = true;
 
             DustType = DustID.Asphalt;
-            AdjTiles = [TileID.Tables];
+            AdjTiles = [TileID.WorkBenches];
 
-            TileObjectData.newTile.CopyFrom(TileObjectData.Style3x2);
-            TileObjectData.newTile.StyleHorizontal = true;
-            TileObjectData.newTile.CoordinateHeights = [16, 18];
+            TileObjectData.newTile.CopyFrom(TileObjectData.Style2x1);
+            TileObjectData.newTile.CoordinateHeights = [18];
             TileObjectData.addTile(Type);
 
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
-            AddMapEntry(new Color(53, 53, 47), Language.GetText("MapObject.Table"));
+            AddMapEntry(new Color(53, 53, 47), Language.GetText("ItemName.WorkBench"));
         }
 
         public override void NumDust(int i, int j, bool fail, ref int num)

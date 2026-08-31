@@ -9,7 +9,7 @@ using Terraria.ObjectData;
 using Terraria.Localization;
 using Terraria.DataStructures;
 
-namespace AsphaltMod.Content.Tiles.Furniture
+namespace AsphaltMod.Content.Tiles
 {
     public class AsphaltLamp : ModTile
     {
@@ -17,7 +17,7 @@ namespace AsphaltMod.Content.Tiles.Furniture
 
         public override void Load()
         {
-            flameTexture = ModContent.Request<Texture2D>("AsphaltMod/Content/Tiles/Furniture/AsphaltLamp_Flame");
+            flameTexture = ModContent.Request<Texture2D>("AsphaltMod/Content/Tiles/AsphaltLamp_Flame");
         }
 
         public override void SetStaticDefaults()
@@ -36,7 +36,9 @@ namespace AsphaltMod.Content.Tiles.Furniture
             TileObjectData.newTile.LavaPlacement = LiquidPlacement.NotAllowed;
             TileObjectData.addTile(Type);
 
-            DustType = DustID.Asphalt;
+            DustType = -1;
+            AdjTiles = [TileID.Lamps];
+
             AddMapEntry(new Color(53, 53, 47), Language.GetText("MapObject.FloorLamp"));
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
         }
@@ -147,7 +149,7 @@ namespace AsphaltMod.Content.Tiles.Furniture
 
             TileLoader.SetDrawPositions(i, j, ref width, ref offsetY, ref height, ref frameX, ref  frameY);
 
-            ulong randSeed = Main.TileFrameSeed ^ (ulong)((long)j << 32 | (long)(uint)i);
+            ulong randSeed = Main.TileFrameSeed ^ (ulong)((long)j << 32 | (uint)i);
 
             for (int c = 0; c < 7; c++)
             {
