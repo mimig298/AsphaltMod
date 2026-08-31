@@ -186,6 +186,36 @@ Items: {
 		DisplayName: Asphalt Hook
 		Tooltip: To grab onto stuff faster.
 	}
+
+	AsphaltBathtub: {
+		DisplayName: Asphalt Bathtub
+		Tooltip: ""
+	}
+
+	AsphaltBed: {
+		DisplayName: Asphalt Bed
+		Tooltip: ""
+	}
+
+	AsphaltBookcase: {
+		DisplayName: Asphalt Bookcase
+		Tooltip: ""
+	}
+
+	AsphaltCandelabra: {
+		DisplayName: Asphalt Candelabra
+		Tooltip: ""
+	}
+
+	AsphaltChest: {
+		DisplayName: Asphalt Chest
+		Tooltip: ""
+	}
+
+	AsphaltCandle: {
+		DisplayName: Asphalt Candle
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
