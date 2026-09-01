@@ -12,7 +12,7 @@ namespace AsphaltMod.Content.Tiles;
 
 public class AsphaltCandelabra : ModTile
 {
-    private Asset<Texture2D> flameTexture;
+    private static Asset<Texture2D> flameTexture;
 
     public override void Load()
     {

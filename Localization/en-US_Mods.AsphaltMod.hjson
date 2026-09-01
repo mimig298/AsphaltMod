@@ -216,6 +216,11 @@ Items: {
 		DisplayName: Asphalt Candle
 		Tooltip: ""
 	}
+
+	AsphaltChandelier: {
+		DisplayName: Asphalt Chandelier
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
