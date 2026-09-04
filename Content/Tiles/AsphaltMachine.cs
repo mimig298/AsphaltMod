@@ -26,7 +26,7 @@ namespace AsphaltMod.Content.Tiles
 
             AnimationFrameHeight = 38;
 
-            DustType = DustID.Asphalt;
+            DustType = -1;
             AdjTiles = [TileID.Blendomatic];
             LocalizedText mapEntryName = CreateMapEntryName();
             AddMapEntry(new Color(99, 99, 99), mapEntryName);

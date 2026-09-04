@@ -24,7 +24,7 @@ namespace AsphaltMod.Content.Tiles
             TileID.Sets.DisableSmartCursor[Type] = true;
             TileID.Sets.OpenDoorID[Type] = ModContent.TileType<AsphaltDoorOpen>();
 
-            DustType = DustID.Asphalt;
+            DustType = -1;
             AdjTiles = [TileID.ClosedDoor];
 
             TileObjectData.newTile.CopyFrom(TileObjectData.GetTileData(TileID.ClosedDoor, 0));
@@ -37,11 +37,6 @@ namespace AsphaltMod.Content.Tiles
         public override bool HasSmartInteract(int i, int j, SmartInteractScanSettings settings)
         {
             return true;
-        }
-
-        public override void NumDust(int i, int j, bool fail, ref int num)
-        {
-            num = 1;
         }
 
         public override void MouseOver(int i, int j)

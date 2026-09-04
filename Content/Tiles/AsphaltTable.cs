@@ -19,7 +19,7 @@ namespace AsphaltMod.Content.Tiles
             TileID.Sets.DisableSmartCursor[Type] = true;
             TileID.Sets.IgnoredByNpcStepUp[Type] = true;
 
-            DustType = DustID.Asphalt;
+            DustType = -1;
             AdjTiles = [TileID.Tables];
 
             TileObjectData.newTile.CopyFrom(TileObjectData.Style3x2);
@@ -29,11 +29,6 @@ namespace AsphaltMod.Content.Tiles
 
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
             AddMapEntry(new Color(53, 53, 47), Language.GetText("MapObject.Table"));
-        }
-
-        public override void NumDust(int i, int j, bool fail, ref int num)
-        {
-            num = fail ? 1 : 3;
         }
     }
 }

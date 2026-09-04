@@ -29,10 +29,5 @@ namespace AsphaltMod.Content.Tiles
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
             AddMapEntry(new Color(53, 53, 47), Language.GetText("ItemName.WorkBench"));
         }
-
-        public override void NumDust(int i, int j, bool fail, ref int num)
-        {
-            num = fail ? 1 : 3;
-        }
     }
 }

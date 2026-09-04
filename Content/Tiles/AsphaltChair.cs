@@ -25,7 +25,7 @@ namespace AsphaltMod.Content.Tiles
             TileID.Sets.CanBeSatOnForPlayers[Type] = true;
             TileID.Sets.DisableSmartCursor[Type] = true;
 
-            DustType = DustID.Asphalt;
+            DustType = -1;
             AdjTiles = [TileID.Chairs];
             AddMapEntry(new Color(53, 53, 47), Language.GetText("MapObject.Chair"));
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsChair);
@@ -43,11 +43,6 @@ namespace AsphaltMod.Content.Tiles
             TileObjectData.newAlternate.Direction = TileObjectDirection.PlaceRight;
             TileObjectData.addAlternate(1); // Facing right will use the second texture style
             TileObjectData.addTile(Type);
-        }
-
-        public override void NumDust(int i, int j, bool fail, ref int num)
-        {
-            num = fail ? 1 : 3;
         }
 
         public override bool HasSmartInteract(int i, int j, SmartInteractScanSettings settings)
