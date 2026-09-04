@@ -221,6 +221,11 @@ Items: {
 		// DisplayName: Asphalt Chandelier
 		// Tooltip: ""
 	}
+
+	AsphaltClock: {
+		// DisplayName: Asphalt Clock
+		// Tooltip: ""
+	}
 }
 
 Projectiles: {
