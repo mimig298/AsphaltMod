@@ -1,6 +1,4 @@
 ﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using ReLogic.Content;
 using Terraria;
 using Terraria.ID;
 using Terraria.Enums;
@@ -12,13 +10,6 @@ namespace AsphaltMod.Content.Tiles
 {
     public class AsphaltLamp : ModTile
     {
-        private static Asset<Texture2D> flameTexture;
-
-        public override void Load()
-        {
-            flameTexture = ModContent.Request<Texture2D>("AsphaltMod/Content/Tiles/AsphaltLamp_Flame");
-        }
-
         public override void SetStaticDefaults()
         {
             Main.tileLighted[Type] = true;
@@ -70,31 +61,6 @@ namespace AsphaltMod.Content.Tiles
                 r = 0.98f;
                 g = 0.96f;
                 b = 0.75f;
-            }
-        }
-
-        public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
-        {
-            SpriteEffects effects = SpriteEffects.None;
-            Vector2 zero = Main.drawToScreen ? Vector2.Zero : new(Main.offScreenRange);
-
-            Tile tile = Main.tile[i, j];
-            int width = 16;
-            int offsetY = 0;
-            int height = 16;
-            short frameX = tile.TileFrameX;
-            short frameY = tile.TileFrameY;
-
-            TileLoader.SetDrawPositions(i, j, ref width, ref offsetY, ref height, ref frameX, ref  frameY);
-
-            ulong randSeed = Main.TileFrameSeed ^ (ulong)((long)j << 32 | (uint)i);
-
-            for (int c = 0; c < 7; c++)
-            {
-                float shakeX = Utils.RandomInt(ref randSeed, -10, 11) * 0.15f;
-                float shakeY = Utils.RandomInt(ref randSeed, -10, 1) * 0.35f;
-
-                spriteBatch.Draw(flameTexture.Value, new Vector2(i * 16 - (int)Main.screenPosition.X - (width - 16f) / 2f + shakeX, j * 16 - (int)Main.screenPosition.Y + offsetY + shakeY) + zero, new Rectangle(frameX, frameY, width, height), new Color(100, 100, 100, 0), 0f, default, 1f, effects, 0f);
             }
         }
     }

@@ -231,6 +231,11 @@ Items: {
 		DisplayName: Asphalt Dresser
 		Tooltip: ""
 	}
+
+	AsphaltLantern: {
+		DisplayName: Asphalt Lantern
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
