@@ -236,6 +236,11 @@ Items: {
 		DisplayName: Asphalt Lantern
 		Tooltip: ""
 	}
+
+	AsphaltPiano: {
+		DisplayName: Asphalt Piano
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
