@@ -241,6 +241,11 @@ Items: {
 		// DisplayName: Asphalt Piano
 		// Tooltip: ""
 	}
+
+	AsphaltSink: {
+		// DisplayName: Asphalt Sink
+		// Tooltip: ""
+	}
 }
 
 Projectiles: {
