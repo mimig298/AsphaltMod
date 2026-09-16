@@ -246,6 +246,11 @@ Items: {
 		DisplayName: Asphalt Sink
 		Tooltip: ""
 	}
+
+	AsphaltSofa: {
+		DisplayName: Asphalt Sofa
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
