@@ -77,9 +77,10 @@ namespace AsphaltMod.Content.Tiles
             {
                 player.GamepadEnableGrappleCooldown();
                 player.sitting.SitDown(player, i, j);
+                return true;
             }
 
-            return true;
+            return false;
         }
 
         public override void MouseOver(int i, int j)

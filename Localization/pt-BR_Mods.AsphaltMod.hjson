@@ -251,6 +251,11 @@ Items: {
 		// DisplayName: Asphalt Sofa
 		// Tooltip: ""
 	}
+
+	AsphaltToilet: {
+		// DisplayName: Asphalt Toilet
+		// Tooltip: ""
+	}
 }
 
 Projectiles: {
