@@ -93,7 +93,7 @@ Items: {
 	AsphaltChair.DisplayName: Cadeira de Asfalto
 	AsphaltWorkbench.DisplayName: Bancada de Trabalho de Asfalto
 	AsphaltDoor.DisplayName: Porta de Asfalto
-	AsphaltLamp.DisplayName: Candeeiro de Asfalto
+	AsphaltLamp.DisplayName: Lâmpada de Asfalto
 
 	AsphaltAxe: {
 		DisplayName: Machado de Asfalto
@@ -188,72 +188,72 @@ Items: {
 	}
 
 	AsphaltBathtub: {
-		// DisplayName: Asphalt Bathtub
+		DisplayName: Banheira de Asfalto
 		// Tooltip: ""
 	}
 
 	AsphaltBed: {
-		// DisplayName: Asphalt Bed
+		DisplayName: Cama de Asfalto
 		// Tooltip: ""
 	}
 
 	AsphaltBookcase: {
-		// DisplayName: Asphalt Bookcase
+		DisplayName: Estante de Asfalto
 		// Tooltip: ""
 	}
 
 	AsphaltCandelabra: {
-		// DisplayName: Asphalt Candelabra
+		DisplayName: Candelabro de Asfalto
 		// Tooltip: ""
 	}
 
 	AsphaltChest: {
-		// DisplayName: Asphalt Chest
+		DisplayName: Baú de Asfalto
 		// Tooltip: ""
 	}
 
 	AsphaltCandle: {
-		// DisplayName: Asphalt Candle
+		DisplayName: Vela de Asfalto
 		// Tooltip: ""
 	}
 
 	AsphaltChandelier: {
-		// DisplayName: Asphalt Chandelier
+		DisplayName: Lustre de Asfalto
 		// Tooltip: ""
 	}
 
 	AsphaltClock: {
-		// DisplayName: Asphalt Clock
+		DisplayName: Relógio de Asfalto
 		// Tooltip: ""
 	}
 
 	AsphaltDresser: {
-		// DisplayName: Asphalt Dresser
+		DisplayName: Cômoda de Asfalto
 		// Tooltip: ""
 	}
 
 	AsphaltLantern: {
-		// DisplayName: Asphalt Lantern
+		DisplayName: Lanterna de Asfalto
 		// Tooltip: ""
 	}
 
 	AsphaltPiano: {
-		// DisplayName: Asphalt Piano
+		DisplayName: Piano de Asfalto
 		// Tooltip: ""
 	}
 
 	AsphaltSink: {
-		// DisplayName: Asphalt Sink
+		DisplayName: Pia de Asfalto
 		// Tooltip: ""
 	}
 
 	AsphaltSofa: {
-		// DisplayName: Asphalt Sofa
+		DisplayName: Sofá de Asfalto
 		// Tooltip: ""
 	}
 
 	AsphaltToilet: {
-		// DisplayName: Asphalt Toilet
+		DisplayName: Privada de Asfalto
 		// Tooltip: ""
 	}
 }
