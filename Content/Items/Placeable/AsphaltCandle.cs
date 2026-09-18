@@ -20,7 +20,7 @@ public class AsphaltCandle : ModItem
         CreateRecipe()
             .AddIngredient(ItemID.AsphaltBlock, 4)
             .AddIngredient(ItemID.Torch)
-            .AddTile<Tiles.AsphaltMachine>()
+            .AddTile(TileID.Blendomatic)
             .Register();
     }
 }

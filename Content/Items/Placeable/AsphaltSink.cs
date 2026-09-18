@@ -18,7 +18,7 @@ public class AsphaltSink : ModItem
         CreateRecipe()
             .AddIngredient(ItemID.AsphaltBlock, 6)
             .AddIngredient(ItemID.WaterBucket)
-            .AddTile<Tiles.AsphaltMachine>()
+            .AddTile(TileID.Blendomatic)
             .Register();
     }
 }

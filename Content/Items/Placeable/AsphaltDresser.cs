@@ -17,7 +17,7 @@ public class AsphaltDresser : ModItem
     {
         CreateRecipe()
             .AddIngredient(ItemID.AsphaltBlock, 16)
-            .AddTile<Tiles.AsphaltMachine>()
+            .AddTile(TileID.Blendomatic)
             .Register();
     }
 }

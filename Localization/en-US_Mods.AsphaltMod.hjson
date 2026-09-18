@@ -116,7 +116,7 @@ Items: {
 	}
 
 	AsphaltMachine: {
-		DisplayName: Asphalt Machine
+		DisplayName: Asphalt Compactor
 		Tooltip:
 			'''
 			Used for asphalt recipes
@@ -269,7 +269,7 @@ Projectiles: {
 	AsphaltHook.DisplayName: Asphalt Hook
 }
 
-Tiles.AsphaltMachine.MapEntry: Asphalt Machine
+Tiles.AsphaltMachine.MapEntry: Asphalt Compactor
 
 NPCs: {
 	AsphaltSlime: {

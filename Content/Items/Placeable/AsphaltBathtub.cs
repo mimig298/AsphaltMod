@@ -18,7 +18,7 @@ public class AsphaltBathtub : ModItem
     {
         CreateRecipe()
             .AddIngredient(ItemID.AsphaltBlock, 14)
-            .AddTile<Tiles.AsphaltMachine>()
+            .AddTile(TileID.Blendomatic)
             .Register();
     }
 }

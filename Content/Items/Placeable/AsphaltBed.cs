@@ -20,7 +20,7 @@ public class AsphaltBed : ModItem
         CreateRecipe()
             .AddIngredient(ItemID.AsphaltBlock, 15)
             .AddIngredient(ItemID.Silk, 5)
-            .AddTile<Tiles.AsphaltMachine>()
+            .AddTile(TileID.Blendomatic)
             .Register();
     }
 }

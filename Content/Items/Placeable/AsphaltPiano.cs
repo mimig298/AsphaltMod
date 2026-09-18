@@ -18,7 +18,7 @@ public class AsphaltPiano : ModItem
             .AddIngredient(ItemID.AsphaltBlock, 15)
             .AddIngredient(ItemID.Bone, 4)
             .AddIngredient(ItemID.Book)
-            .AddTile<Tiles.AsphaltMachine>()
+            .AddTile(TileID.Blendomatic)
             .Register();
     }
 }

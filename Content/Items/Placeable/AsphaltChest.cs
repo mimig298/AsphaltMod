@@ -17,7 +17,7 @@ public class AsphaltChest : ModItem
         CreateRecipe()
             .AddIngredient(ItemID.AsphaltBlock, 8)
             .AddRecipeGroup(RecipeGroupID.IronBar, 2)
-            .AddTile<Tiles.AsphaltMachine>()
+            .AddTile(TileID.Blendomatic)
             .Register();
     }
 }

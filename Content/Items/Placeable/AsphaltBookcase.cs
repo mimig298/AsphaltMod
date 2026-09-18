@@ -20,7 +20,7 @@ public class AsphaltBookcase : ModItem
         CreateRecipe()
             .AddIngredient(ItemID.AsphaltBlock, 20)
             .AddIngredient(ItemID.Book, 10)
-            .AddTile<Tiles.AsphaltMachine>()
+            .AddTile(TileID.Blendomatic)
             .Register();
     }
 }

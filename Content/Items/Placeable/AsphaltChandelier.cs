@@ -18,7 +18,7 @@ public class AsphaltChandelier : ModItem
             .AddIngredient(ItemID.AsphaltBlock, 4)
             .AddIngredient(ItemID.Torch, 4)
             .AddIngredient(ItemID.Chain)
-            .AddTile<Tiles.AsphaltMachine>()
+            .AddTile(TileID.Blendomatic)
             .Register();
     }
 }

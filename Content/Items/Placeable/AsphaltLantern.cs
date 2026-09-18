@@ -18,7 +18,7 @@ public class AsphaltLantern : ModItem
         CreateRecipe()
             .AddIngredient(ItemID.AsphaltBlock, 6)
             .AddIngredient(ItemID.Torch)
-            .AddTile<Tiles.AsphaltMachine>()
+            .AddTile(TileID.Blendomatic)
             .Register();
     }
 }

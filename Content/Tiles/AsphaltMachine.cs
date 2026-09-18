@@ -34,7 +34,7 @@ namespace AsphaltMod.Content.Tiles
 
         public override void AnimateTile(ref int frame, ref int frameCounter)
         {
-            if (++frameCounter >= 5)
+            if (++frameCounter >= 6)
             {
                 frameCounter = 0;
                 frame = ++frame % 4;

@@ -22,7 +22,7 @@ namespace AsphaltMod.Content.Items.Placeable
             CreateRecipe()
                 .AddIngredient(ItemID.AsphaltBlock, 3)
                 .AddIngredient(ItemID.Torch)
-                .AddTile(ModContent.TileType<Tiles.AsphaltMachine>())
+                .AddTile(TileID.Blendomatic)
                 .Register();
         }
     }

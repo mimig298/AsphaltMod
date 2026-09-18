@@ -16,15 +16,28 @@ namespace AsphaltMod.Content.Items.Placeable
 
         public override void AddRecipes()
         {
-            CreateRecipe()
-                .AddIngredient(ItemID.BlendOMatic)
-                .AddIngredient(ItemID.AsphaltBlock, 20)
-                .AddIngredient(ItemID.HallowedBar, 18)
-                .AddIngredient(ItemID.SoulofFright, 3)
-                .AddIngredient(ItemID.SoulofMight, 3)
-                .AddIngredient(ItemID.SoulofSight, 3)
-                .AddTile(TileID.MythrilAnvil)
-                .Register();
+            if (((AsphaltMod)Mod).BalanceChanges)
+            {
+                CreateRecipe()
+                    .AddIngredient(ItemID.BlendOMatic)
+                    .AddIngredient(ItemID.AsphaltBlock, 20)
+                    .AddIngredient(ItemID.MartianConduitPlating, 25)
+                    .AddIngredient(ItemID.HallowedBar, 5)
+                    .AddTile(TileID.MythrilAnvil)
+                    .Register();
+            }
+            else
+            {
+                CreateRecipe()
+                    .AddIngredient(ItemID.BlendOMatic)
+                    .AddIngredient(ItemID.AsphaltBlock, 20)
+                    .AddIngredient(ItemID.HallowedBar, 18)
+                    .AddIngredient(ItemID.SoulofFright, 3)
+                    .AddIngredient(ItemID.SoulofMight, 3)
+                    .AddIngredient(ItemID.SoulofSight, 3)
+                    .AddTile(TileID.MythrilAnvil)
+                    .Register();
+            }
         }
     }
 }

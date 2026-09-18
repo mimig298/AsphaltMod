@@ -18,7 +18,7 @@ public class AsphaltSofa : ModItem
         CreateRecipe()
             .AddIngredient(ItemID.AsphaltBlock, 5)
             .AddIngredient(ItemID.Silk, 2)
-            .AddTile<Tiles.AsphaltMachine>()
+            .AddTile(TileID.Blendomatic)
             .Register();
     }
 }

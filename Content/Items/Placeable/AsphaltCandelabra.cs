@@ -18,7 +18,7 @@ public class AsphaltCandelabra : ModItem
         CreateRecipe()
             .AddIngredient(ItemID.AsphaltBlock, 5)
             .AddIngredient(ItemID.Torch, 3)
-            .AddTile<Tiles.AsphaltMachine>()
+            .AddTile(TileID.Blendomatic)
             .Register();
     }
 }

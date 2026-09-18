@@ -20,7 +20,7 @@ public class AsphaltClock : ModItem
             .AddRecipeGroup(RecipeGroupID.IronBar, 3)
             .AddIngredient(ItemID.Glass, 6)
             .AddIngredient(ItemID.AsphaltBlock, 1)
-            .AddTile<Tiles.AsphaltMachine>()
+            .AddTile(TileID.Blendomatic)
             .Register();
     }
 }
