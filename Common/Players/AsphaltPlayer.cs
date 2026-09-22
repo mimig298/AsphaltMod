@@ -19,6 +19,8 @@ namespace AsphaltMod.Common.Players
                 Player.maxRunSpeed *= 5f;
                 Player.runAcceleration *= 1.5f;
                 Player.runSlowdown *= 4f;
+                if (((AsphaltMod)Mod).BalanceChanges)
+                    Player.powerrun = false;
             }
         }
     }
