@@ -35,6 +35,7 @@ public class AsphaltCar : ModMount
         MountData.blockExtraJumps = true;
         MountData.heightBoost = 18;
         MountData.flightTimeMax = 0;
+        MountData.fallDamage = 1f;
 
         MountData.spawnDust = DustID.Asphalt;
         MountData.spawnDustNoGravity = true;
