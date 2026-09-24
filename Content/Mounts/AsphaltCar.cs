@@ -15,7 +15,7 @@ namespace AsphaltMod.Content.Mounts;
 
 public class AsphaltCar : ModMount
 {
-    private static Vector2 HitboxSize = new(172, 50);
+    private readonly static Vector2 HitboxSize = new(172, 50);
 
     internal static SoundStyle CarStartSound = new("AsphaltMod/Assets/Sounds/car_start", SoundType.Sound);
     internal static SoundStyle CarLoopSound = new("AsphaltMod/Assets/Sounds/car_loop", SoundType.Sound)
@@ -82,8 +82,21 @@ public class AsphaltCar : ModMount
     {
         CarPlayer carPlayer = player.GetModPlayer<CarPlayer>();
 
-        // Headlights
+        Update_Headlights(player);
 
+        Update_Damage(player);
+
+        // Play sound
+
+        if (!SoundEngine.TryGetActiveSound(soundSlot, out _))
+        {
+            soundSlot = SoundEngine.PlaySound(CarLoopSound, player.Center, soundInstance => SoundCallback(soundInstance, player));
+        }
+    }
+
+    private void Update_Headlights(Player player)
+    {
+        CarPlayer carPlayer = player.GetModPlayer<CarPlayer>();
         Point tileCoords = new((int)player.MountedCenter.X / 16, (int)player.MountedCenter.Y / 16);
         float brightness = Lighting.Brightness(tileCoords.X, tileCoords.Y);
         if (brightness <= 0.5f && !carPlayer.lightsOn)
@@ -113,7 +126,10 @@ public class AsphaltCar : ModMount
             Vector2 speedAdjustedPos = headlightPos + new Vector2(player.velocity.X * 5); // the light falls behind when you go too fast so this counters that
             Lighting.AddLight(speedAdjustedPos, new Vector3(0.8f));
         }
+    }
 
+    private void Update_Damage(Player player)
+    {
         // Deal damage (adapated from minecart damage in Player.Update)
 
         float speed = player.velocity.Length();
@@ -139,13 +155,6 @@ public class AsphaltCar : ModMount
                 player.ApplyDamageToNPC(npc, damage, knockback, direction);
                 npc.immune[player.whoAmI] = 30;
             }
-        }
-
-        // Play sound
-
-        if (!SoundEngine.TryGetActiveSound(soundSlot, out _))
-        {
-            soundSlot = SoundEngine.PlaySound(CarLoopSound, player.Center, soundInstance => SoundCallback(soundInstance, player));
         }
     }
 
