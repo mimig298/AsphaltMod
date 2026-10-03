@@ -26,7 +26,7 @@ public class AsphaltHook : ModItem
 
         if (ModLoader.TryGetMod("HookStatsAndWingStats", out Mod hookStatsMod) && ContentSamples.ProjectilesByType.TryGetValue(Item.shoot, out Projectile hookProj))
         {
-            float hookReach = hookProj.ModProjectile?.GrappleRange() ?? 440f;
+            float hookReach = hookProj.ModProjectile?.GrappleRange() ?? 420f;
             float hookSpeed = Item.shootSpeed * (hookProj.extraUpdates + 1);
             hookStatsMod.Call("SetHookStats", Type, hookReach, hookSpeed, 1, (byte)0);
         }

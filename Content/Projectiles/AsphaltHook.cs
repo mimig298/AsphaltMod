@@ -29,7 +29,7 @@ public class AsphaltHook : ModProjectile
 
     public override float GrappleRange()
     {
-        return 440f;
+        return 420f;
     }
 
     public override void NumGrappleHooks(Player player, ref int numHooks)
