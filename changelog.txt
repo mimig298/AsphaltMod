@@ -1,0 +1,59 @@
+[h1] Update 2.0.0 [/h1]
+
+A major update that includes many new additions as well as changes to most existing items.
+
+[h2] Balance Changes [/h2]
+When it was started, Asphalt Mod was mostly a joke mod, and as such its features didn't have much care when being planned, and were very overpowered compared to the standard Terraria progression.
+This update reworked almost every feature to make them balanced with the game, which involved nerfing most items.
+The old stats are still available through an option in Asphalt Mod's config, so you can use that if you preferred Asphalt Mod as it was before.
+The balance changes are as follows: [list]
+[*] Asphalt Sword damage reduced to 26 (from 50)
+[*] Asphalt Bow damage reduced to 19 (from 37), and use time increased to 10 (from 8)
+[*] Asphalt Gun damage reduced to 15 (from 27), and knockback reduced to 1.1 (from 1.5)
+[*] Asphalt Staff damage reduced to 18 (from 35), knockback reduced to 1.3 (from 2), shoot speed reduced to 18 (from 20), and mana usage increased to 10 (from 7). Its projectile no longer pierces enemies (previously pierced 2 enemies).
+[*] Asphalt Arrow damage reduced to 6 (from 12)
+[*] Asphalt Bullet damage reduced to 3 (from 10), and it only pierces 1 enemy now (previously 2)
+[*] Asphalt Axe damage reduced to 10 (from 25), and axe power reduced to 19 (from 20)
+[*] Asphalt Chainsaw damage reduced to 19 (from 30), same axe power reduction as the axe
+[*] Asphalt Pickaxe damage reduced to 10 (from 20), and pickaxe power reduced to 180 (from 190)
+[*] Asphalt Drill damage reduced to 11 (from 18), same pickaxe power reduction as the pickaxe
+[*] Asphalt Hammer damage reduced to 8 (from 17), use time increased to 9 (from 7), and hammer power reduced to 75 (from 80);
+[*] Asphalt Boots speed boost reduced by 20%
+[*] Asphalt Gloves no longer boost melee damage, and their attack speed bonus was reduced to 60% (from 100%). Their recipe was also changed to use the Power Glove instead of the Mechanical Glove.
+[*] Asphalt Speed and Swing potions no longer cause damage over time, but still stop natural regen
+[*] Asphalt Speed buff no longer stacks with the effect from running on asphalt or dense asphalt
+[*] Asphalt Swing buff attack speed bonus reduced to 40% (from 70%), and now it also reduces knockback dealt by 80%
+[*] Asphalt Machine renamed to Asphalt Compactor. Recipe updated to use Martian Conduit Plating instead of mech souls, and hallowed bars required decreased. No longer used to craft furniture.
+[/list]
+
+[h2] New content [/h2]
+[list]
+[*] [b]Asphalt Rope[/b]: Climb and descend faster than on normal ropes
+[*] [b]Asphalt Car[/b]: Mount that can reach 105 mph, but has slow acceleration. Can run over and damage enemies like minecarts. Includes headlights that turn on in the dark.
+[*] [b]Asphalt Slime[/b]: Slime enemy that spawns on asphalt. Jumps and moves much faster than normal slimes.
+[*] [b]Asphalt Bomb[/b]: Detonates faster than standard bombs
+[*] [b]Asphalt Hook[/b]: Grappling hook that launches and retracts quickly
+[*] [b]Asphalt furniture[/b]: Complete furniture set made with asphalt
+[/list]
+
+[h2] Mod additions [/h2]
+[list]
+[*] Add Portuguese localisation
+[*] Add small icon version (displayed in config and bestiary)
+[*] Compatibility with Hook + Wing Stats mod
+[/list]
+
+[h2] Visual changes [/h2]
+[list]
+[*] Asphalt furniture no longer creates dust
+[*] Remove flame from Asphalt Lamp
+[*] New Asphalt Brick textures
+[*] Asphalt Compactor (Asphalt Machine) sprite updated
+[/list]
+
+[h2] Patches and fixes [/h2]
+[list]
+[*] Asphalt Platforms and Dense Asphalt now have the correct journey mode research unlock counts
+[*] Asphalt Staff no longer spams its use sound
+[*] Fix highlights for Asphalt Doors
+[/list]

@@ -6,6 +6,8 @@ It currently adds:
 * Asphalt movement speed and weapon speed potions
 * Asphalt Car mount
 * Asphalt grappling hook
+* Asphalt platforms
+* Asphalt rope
 * Dense Asphalt (asphalt upgrade)
 * Asphalt Slime enemy
 * Asphalt furniture, bricks and walls

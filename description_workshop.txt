@@ -1,0 +1,23 @@
+[b] The Asphalt Mod [/b] is a small content mod that adds multiple items related to asphalt.
+It currently adds:
+[list]
+[*] Melee, ranged, and magic weapons
+[*] A complete set of tools
+[*] Asphalt boots accessory
+[*] Asphalt movement speed and weapon speed potions
+[*] Asphalt Car mount
+[*] Asphalt grappling hook
+[*] Asphalt platforms
+[*] Asphalt rope
+[*] Dense Asphalt (asphalt upgrade)
+[*] Asphalt Slime enemy
+[*] Asphalt furniture, bricks and walls
+[/list]
+
+This mod started being developed in early 2023, as part of the asphalt meme trend going on at the time, but I started taking it more seriously over time, and now it should be decently fit enough into the game.
+
+Mod developed by mimig298.
+
+[b] Additional credits: [/b]
+Asphalt Brick texture by Pixivic
+Asphalt Car sound by u_sdjy4zhhbd from Pixabay
