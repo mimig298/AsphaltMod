@@ -1,5 +1,4 @@
-﻿using Microsoft.Xna.Framework;
-using Terraria;
+﻿using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -11,11 +10,10 @@ namespace AsphaltMod.Content.Projectiles
         public override void SetDefaults()
         {
             bool balanced = ((AsphaltMod)Mod).BalanceChanges;
-            Projectile.width = 2;
-            Projectile.height = 10;
+            Projectile.width = 4;
+            Projectile.height = 4;
             Projectile.aiStyle = ProjAIStyleID.Arrow;
             Projectile.friendly = true;
-            Projectile.noDropItem = true;
             Projectile.penetrate = balanced ? 2 : 3;
             Projectile.light = 0.5f;
             Projectile.scale = 1.2f;
@@ -28,11 +26,8 @@ namespace AsphaltMod.Content.Projectiles
 
         public override void OnKill(int timeLeft)
         {
-            SoundEngine.PlaySound(SoundID.Dig, Projectile.position);
-            for (int k = 0; k < 3; k++)
-            {
-                Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, DustID.Asphalt);
-            }
+            SoundEngine.PlaySound(SoundID.Item10, Projectile.position);
+            Collision.HitTiles(Projectile.position, Projectile.velocity, Projectile.width, Projectile.height);
         }
     }
 }
