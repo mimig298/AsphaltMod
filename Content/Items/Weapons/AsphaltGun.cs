@@ -53,5 +53,15 @@ namespace AsphaltMod.Content.Items.Weapons
         {
             return new Vector2(2f, -2f);
         }
+
+        public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
+        {
+            bool balanced = ((AsphaltMod)Mod).BalanceChanges;
+
+            if (balanced)
+            {
+                velocity = velocity.RotateRandom(0.12f);
+            }
+        }
     }
 }
