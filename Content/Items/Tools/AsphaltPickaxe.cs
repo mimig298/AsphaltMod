@@ -27,6 +27,7 @@ namespace AsphaltMod.Content.Items.Tools
             Item.rare = ItemRarityID.LightRed;
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
+            Item.useTurn = true;
 
             Item.pick = balanced ? 180 : 190;
         }
