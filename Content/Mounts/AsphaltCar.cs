@@ -17,15 +17,22 @@ public class AsphaltCar : ModMount
 {
     private static Vector2 HitboxSize = new(172, 50);
 
-    internal static SoundStyle CarStartSound = new("AsphaltMod/Assets/Sounds/car_start", SoundType.Sound);
+    internal static SoundStyle CarStartSound = new("AsphaltMod/Assets/Sounds/car_start", SoundType.Sound)
+    {
+        MaxInstances = 3
+    };
     internal static SoundStyle CarLoopSound = new("AsphaltMod/Assets/Sounds/car_loop", SoundType.Sound)
     {
+        MaxInstances = 3,
         IsLooped = true,
         SoundLimitBehavior = SoundLimitBehavior.IgnoreNew,
         PauseBehavior = PauseBehavior.PauseWithGame
     };
 
-    private SlotId soundSlot;
+    protected class AsphaltCarData
+    {
+        internal SlotId soundSlot;
+    }
 
     public override void SetStaticDefaults()
     {
@@ -72,15 +79,21 @@ public class AsphaltCar : ModMount
 
     public override void SetMount(Player player, ref bool skipDust)
     {
-        if (!SoundEngine.TryGetActiveSound(soundSlot, out _))
+        if (player.mount._mountSpecificData is not AsphaltCarData)
         {
-            soundSlot = SoundEngine.PlaySound(CarStartSound, player.Center, soundInstance => SoundCallback(soundInstance, player));
+            player.mount._mountSpecificData = new AsphaltCarData();
+        }
+        var mountData = (AsphaltCarData)player.mount._mountSpecificData;
+        if (!SoundEngine.TryGetActiveSound(mountData.soundSlot, out _))
+        {
+            mountData.soundSlot = SoundEngine.PlaySound(CarStartSound, player.Center, soundInstance => SoundCallback(soundInstance, player));
         }
     }
 
     public override void UpdateEffects(Player player)
     {
         CarPlayer carPlayer = player.GetModPlayer<CarPlayer>();
+        var mountData = (AsphaltCarData)player.mount._mountSpecificData;
 
         // Headlights
 
@@ -143,9 +156,9 @@ public class AsphaltCar : ModMount
 
         // Play sound
 
-        if (!SoundEngine.TryGetActiveSound(soundSlot, out _))
+        if (!SoundEngine.TryGetActiveSound(mountData.soundSlot, out _))
         {
-            soundSlot = SoundEngine.PlaySound(CarLoopSound, player.Center, soundInstance => SoundCallback(soundInstance, player));
+            mountData.soundSlot = SoundEngine.PlaySound(CarLoopSound, player.Center, soundInstance => SoundCallback(soundInstance, player));
         }
     }
 
