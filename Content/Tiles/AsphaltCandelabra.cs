@@ -23,7 +23,7 @@ public class AsphaltCandelabra : ModTile
         TileObjectData.newTile.CopyFrom(TileObjectData.GetTileData(TileID.Candelabras, 0));
         TileObjectData.addTile(Type);
 
-        AddMapEntry(new Color(32, 40, 45), Language.GetText("ItemName.Candelabra"));
+        AddMapEntry(new Color(253, 221, 3), Language.GetText("ItemName.Candelabra"));
     }
 
     public override void ModifyLight(int i, int j, ref float r, ref float g, ref float b)

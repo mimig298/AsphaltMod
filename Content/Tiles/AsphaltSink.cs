@@ -22,6 +22,6 @@ public class AsphaltSink : ModTile
         TileObjectData.newTile.CopyFrom(TileObjectData.GetTileData(TileID.Sinks, 0));
         TileObjectData.addTile(Type);
 
-        AddMapEntry(new Color(105, 107, 125), Language.GetText("MapObject.Sink"));
+        AddMapEntry(new Color(191, 142, 111), Language.GetText("MapObject.Sink"));
     }
 }

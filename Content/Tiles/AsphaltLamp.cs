@@ -29,7 +29,7 @@ namespace AsphaltMod.Content.Tiles
             DustType = -1;
             AdjTiles = [TileID.Lamps];
 
-            AddMapEntry(new Color(53, 53, 47), Language.GetText("MapObject.FloorLamp"));
+            AddMapEntry(new Color(253, 221, 3), Language.GetText("MapObject.FloorLamp"));
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
         }
 

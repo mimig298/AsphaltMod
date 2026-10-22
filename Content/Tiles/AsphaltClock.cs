@@ -24,7 +24,7 @@ public class AsphaltClock : ModTile
         TileObjectData.newTile.CopyFrom(TileObjectData.GetTileData(TileID.GrandfatherClocks, 0));
         TileObjectData.addTile(Type);
 
-        AddMapEntry(new Color(36, 45, 44), Language.GetText("ItemName.GrandfatherClock"));
+        AddMapEntry(new Color(191, 142, 111), Language.GetText("ItemName.GrandfatherClock"));
     }
 
     public override bool HasSmartInteract(int i, int j, SmartInteractScanSettings settings)

@@ -26,6 +26,6 @@ public class AsphaltBookcase : ModTile
         TileObjectData.newTile.CopyFrom(TileObjectData.GetTileData(TileID.Bookcases, 0));
         TileObjectData.addTile(Type);
 
-        AddMapEntry(new Color(44, 41, 50), Language.GetText("ItemName.Bookcase"));
+        AddMapEntry(new Color(191, 142, 111), Language.GetText("ItemName.Bookcase"));
     }
 }

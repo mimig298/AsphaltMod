@@ -24,6 +24,6 @@ public class AsphaltPiano : ModTile
         TileObjectData.addTile(Type);
 
         AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
-        AddMapEntry(new Color(127, 92, 69), Language.GetText("ItemName.Piano"));
+        AddMapEntry(new Color(191, 142, 111), Language.GetText("ItemName.Piano"));
     }
 }

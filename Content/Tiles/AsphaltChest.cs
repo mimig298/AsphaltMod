@@ -32,7 +32,7 @@ public class AsphaltChest : ModTile
         AdjTiles = [TileID.Containers];
         VanillaFallbackOnModDeletion = TileID.Containers;
 
-        AddMapEntry(new Color(53, 53, 47), Language.GetText("ItemName.Chest"));
+        AddMapEntry(new Color(174, 129, 92), Language.GetText("ItemName.Chest"));
 
         TileObjectData.newTile.CopyFrom(TileObjectData.GetTileData(TileID.Containers, 0));
         TileObjectData.addTile(Type);

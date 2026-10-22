@@ -27,7 +27,7 @@ namespace AsphaltMod.Content.Tiles
 
             DustType = -1;
             AdjTiles = [TileID.Chairs];
-            AddMapEntry(new Color(53, 53, 47), Language.GetText("MapObject.Chair"));
+            AddMapEntry(new Color(191, 142, 111), Language.GetText("MapObject.Chair"));
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsChair);
 
             TileObjectData.newTile.CopyFrom(TileObjectData.Style1x2);

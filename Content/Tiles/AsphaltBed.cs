@@ -29,7 +29,7 @@ public class AsphaltBed : ModTile
         TileObjectData.newTile.CopyFrom(TileObjectData.GetTileData(TileID.Beds, 0));
         TileObjectData.addTile(Type);
 
-        AddMapEntry(new Color(127, 92, 69), Language.GetText("ItemName.Bed"));
+        AddMapEntry(new Color(191, 142, 111), Language.GetText("ItemName.Bed"));
     }
 
     public override bool HasSmartInteract(int i, int j, SmartInteractScanSettings settings) => true;
