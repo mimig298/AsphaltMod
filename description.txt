@@ -2,8 +2,9 @@ The Asphalt Mod is a small content mod that adds multiple items related to aspha
 It currently adds:
 * Melee, ranged, and magic weapons
 * A complete set of tools
-* Asphalt boots accessory
+* Asphalt boots and gloves accessories
 * Asphalt movement speed and weapon speed potions
+* Asphalt bomb
 * Asphalt Car mount
 * Asphalt grappling hook
 * Asphalt platforms
