@@ -9,7 +9,7 @@ The old stats are still available through an option in Asphalt Mod's config, so 
 The balance changes are as follows: [list]
 [*] Asphalt Sword damage reduced to 26 (from 50)
 [*] Asphalt Bow damage reduced to 19 (from 37), and use time increased to 10 (from 8)
-[*] Asphalt Gun damage reduced to 15 (from 27), and knockback reduced to 1.1 (from 1.5)
+[*] Asphalt Gun damage reduced to 15 (from 27), knockback reduced to 1.1 (from 1.5), and it now has a shoot spread
 [*] Asphalt Staff damage reduced to 18 (from 35), knockback reduced to 1.3 (from 2), shoot speed reduced to 18 (from 20), and mana usage increased to 10 (from 7). Its projectile no longer pierces enemies (previously pierced 2 enemies).
 [*] Asphalt Arrow damage reduced to 6 (from 12)
 [*] Asphalt Bullet damage reduced to 3 (from 10), and it only pierces 1 enemy now (previously 2)
@@ -29,7 +29,7 @@ The balance changes are as follows: [list]
 [h2] New content [/h2]
 [list]
 [*] [b]Asphalt Rope[/b]: Climb and descend faster than on normal ropes
-[*] [b]Asphalt Car[/b]: Mount that can reach 105 mph, but has slow acceleration. Can run over and damage enemies like minecarts. Includes headlights that turn on in the dark.
+[*] [b]Asphalt Car[/b]: Mount that can reach 105 mph, but has slow acceleration and cannot jump. Can run over and damage enemies like minecarts. Includes headlights that turn on in the dark.
 [*] [b]Asphalt Slime[/b]: Slime enemy that spawns on asphalt. Jumps and moves much faster than normal slimes.
 [*] [b]Asphalt Bomb[/b]: Detonates faster than standard bombs
 [*] [b]Asphalt Hook[/b]: Grappling hook that launches and retracts quickly
@@ -39,7 +39,7 @@ The balance changes are as follows: [list]
 [h2] Mod additions [/h2]
 [list]
 [*] Add Portuguese localisation
-[*] Add small icon version (displayed in config and bestiary)
+[*] Add small icon (displayed in config and bestiary)
 [*] Compatibility with Hook + Wing Stats mod
 [/list]
 
@@ -56,4 +56,8 @@ The balance changes are as follows: [list]
 [*] Asphalt Platforms and Dense Asphalt now have the correct journey mode research unlock counts
 [*] Asphalt Staff no longer spams its use sound
 [*] Fix highlights for Asphalt Doors
+[*] Asphalt Arrows and Bullets now have the correct hitbox size
+[*] Asphalt Bullet behaviour on tile collision is now the same as vanilla bullets
+[*] Tools no longer block player direction from changing
+[*] Furniture tiles' colour on the map is now the same as their vanilla counterparts
 [/list]
