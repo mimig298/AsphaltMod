@@ -49,6 +49,7 @@ The balance changes are as follows: [list]
 [*] Remove flame from Asphalt Lamp
 [*] New Asphalt Brick textures
 [*] Asphalt Compactor (Asphalt Machine) sprite updated
+[*] Asphalt Glove sprite updated, and shows up on both hands now
 [/list]
 
 [h2] Patches and fixes [/h2]

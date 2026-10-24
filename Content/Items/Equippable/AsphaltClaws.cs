@@ -1,14 +1,23 @@
 ﻿using Terraria;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace AsphaltMod.Content.Items.Equippable
 {
-    [AutoloadEquip(EquipType.HandsOn)]
     public class AsphaltClaws : ModItem
     {
         public override LocalizedText Tooltip => this.GetLocalization(((AsphaltMod)Mod).BalanceChanges ? "Tooltip" : "TooltipOld");
+
+        public override void OnCreated(ItemCreationContext context)
+        {
+            if (context is not InitializationItemCreationContext)
+                return;
+
+            EquipLoader.AddEquipTexture(Mod, Texture + "_HandsOnOff", EquipType.HandsOn, this);
+            EquipLoader.AddEquipTexture(Mod, Texture + "_HandsOnOff", EquipType.HandsOff, this);
+        }
 
         public override void SetStaticDefaults()
         {
