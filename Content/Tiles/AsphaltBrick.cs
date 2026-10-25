@@ -12,6 +12,8 @@ namespace AsphaltMod.Content.Tiles
             Main.tileSolid[Type] = true;
             Main.tileBlockLight[Type] = true;
             Main.tileMergeDirt[Type] = true;
+            Main.tileMerge[Type][TileID.Asphalt] = true;
+            Main.tileMerge[TileID.Asphalt][Type] = true;
 
             DustType = DustID.Asphalt;
             AddMapEntry(new Color(32, 33, 34));

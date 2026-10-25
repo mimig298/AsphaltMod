@@ -48,6 +48,7 @@ The balance changes are as follows: [list]
 [*] Asphalt furniture no longer creates dust
 [*] Remove flame from Asphalt Lamp
 [*] New Asphalt Brick textures
+[*] Asphalt Brick and Dense Asphalt now merge with asphalt
 [*] Asphalt Compactor (Asphalt Machine) sprite updated
 [*] Asphalt Glove sprite updated, and shows up on both hands now
 [/list]
