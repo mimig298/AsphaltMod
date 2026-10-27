@@ -10,9 +10,9 @@ The balance changes are as follows: [list]
 [*] Asphalt Sword damage reduced to 26 (from 50)
 [*] Asphalt Bow damage reduced to 19 (from 37), and use time increased to 10 (from 8)
 [*] Asphalt Gun damage reduced to 15 (from 27), knockback reduced to 1.1 (from 1.5), and it now has a shoot spread
-[*] Asphalt Staff damage reduced to 18 (from 35), knockback reduced to 1.3 (from 2), shoot speed reduced to 18 (from 20), and mana usage increased to 10 (from 7). Its projectile no longer pierces enemies (previously pierced 2 enemies).
-[*] Asphalt Arrow damage reduced to 6 (from 12)
-[*] Asphalt Bullet damage reduced to 3 (from 10), and it only pierces 1 enemy now (previously 2)
+[*] Asphalt Staff damage reduced to 26 (from 35), knockback reduced to 1.3 (from 2), and shoot speed reduced to 18 (from 20). Its projectile no longer pierces enemies (previously pierced 2 enemies).
+[*] Asphalt Arrow damage reduced to 10 (from 12)
+[*] Asphalt Bullet damage reduced to 8 (from 10), and it only pierces 1 enemy now (previously 2)
 [*] Asphalt Axe damage reduced to 10 (from 25), and axe power reduced to 19 (from 20)
 [*] Asphalt Chainsaw damage reduced to 19 (from 30), same axe power reduction as the axe
 [*] Asphalt Pickaxe damage reduced to 10 (from 20), and pickaxe power reduced to 180 (from 190)

@@ -15,7 +15,7 @@ namespace AsphaltMod.Content.Items.Ammo
         {
             bool balanced = ((AsphaltMod)Mod).BalanceChanges;
 
-            Item.damage = balanced ? 3 : 10;
+            Item.damage = balanced ? 8 : 10;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 12;
             Item.height = 12;

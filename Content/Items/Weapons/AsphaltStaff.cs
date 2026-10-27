@@ -17,8 +17,8 @@ namespace AsphaltMod.Content.Items.Weapons
         {
             bool balanced = ((AsphaltMod)Mod).BalanceChanges;
 
-            Item.DefaultToStaff(ModContent.ProjectileType<Projectiles.AsphaltBolt>(), balanced ? 9 : 20, 5, balanced ? 10 : 7);
-            Item.SetWeaponValues(balanced ? 18 : 35, balanced ? 1.3f : 2);
+            Item.DefaultToStaff(ModContent.ProjectileType<Projectiles.AsphaltBolt>(), balanced ? 9 : 20, 5, 7);
+            Item.SetWeaponValues(balanced ? 26 : 35, balanced ? 1.3f : 2);
 
             Item.UseSound = SoundID.Item43 with { Volume = 0.7f, MaxInstances = 1, SoundLimitBehavior = SoundLimitBehavior.IgnoreNew };
             Item.rare = ItemRarityID.LightRed;
